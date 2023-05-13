@@ -1,0 +1,17 @@
+// Page
+
+.page {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+.page__body {
+  font-family: "Roboto", "Aria", sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  min-width: 360px;
+  background-color: $basic-semi-beige;
+  color: $basic-black;
+}

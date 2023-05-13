@@ -15,7 +15,7 @@ import htmlmin from 'gulp-htmlmin';
 
 // Styles
 
-const styles = () => {
+export const styles = () => {
   return gulp.src('src/sass/style.scss', { sourcemaps: true })
     .pipe(plumber())
     .pipe(sass().on('error', sass.logError))

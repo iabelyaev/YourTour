@@ -1,0 +1,103 @@
+// Header
+
+.header {
+  position: relative;
+  color: $basic-white;
+
+  &--inner {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 39.9%),
+      linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("../../img/bg-header.png");
+    height: 488px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @include tablet {
+      height: 831px;
+    }
+  }
+}
+
+// Title
+
+.header__title-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 52px;
+  padding-bottom: 52px;
+  margin: 0 auto;
+  max-width: 768px;
+
+  @include tablet {
+    padding-top: 119px;
+    padding-bottom: 119px;
+  }
+
+  @include desktop {
+    padding-top: 119px;
+    padding-bottom: 119px;
+  }
+}
+
+.header__title {
+  margin: 0;
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 38px;
+  text-align: center;
+  color: inherit;
+  letter-spacing: 0.02em;
+
+  @include tablet {
+    font-size: 96px;
+    line-height: 105px;
+    margin-bottom: 50px;
+  }
+}
+
+// Description
+
+.header__description {
+  margin: 0;
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
+  color: inherit;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 50px;
+    padding: 0 150px;
+  }
+
+  @include desktop {
+    padding: 0 100px;
+  }
+}
+
+// Link
+
+.header__link {
+  text-decoration: none;
+  color: $basic-black;
+  background-color: $basic-white;
+  border: 1px solid $basic-gray;
+  border-radius: 10px;
+  padding: 5px 20px;
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: -0.01em;
+
+  @include tablet {
+    font-size: 17px;
+    line-height: 24px;
+  }
+}

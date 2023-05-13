@@ -1,0 +1,17 @@
+// Wrapper
+
+.wrapper {
+  width: 100%;
+  padding: 0 21px;
+  margin: 0 auto;
+
+  @include tablet {
+    padding: 0 53px;
+  }
+
+  @include desktop {
+    position: relative;
+    max-width: 1920px;
+    padding: 0 375px;
+  }
+}
