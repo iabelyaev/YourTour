@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" href="./fonts/Roboto-Regular.woff2" as="font" crossorigin="anonymous" type="font/woff2">
+  <link rel="preload" href="./fonts/Roboto-Medium.woff2" as="font" crossorigin="anonymous" type="font/woff2">
+  <link rel="preload" href="./fonts/Roboto-Bold.woff2" as="font" crossorigin="anonymous" type="font/woff2">
   <link rel="stylesheet" href="./css/style.min.css">
   <title>YourTour</title>
 </head>
@@ -43,5 +46,141 @@
       <a class="header__link" href="#">Найти тур</a>
     </div>
   </header>
+  <main class="main">
+    <section class="tour">
+      <div class="wrapper">
+        <h2 class="tour__title title">Выбери свой тур</h2>
+        <ul class="tour__list">
+          <li class="tour__item">
+            <a class="tour__link tour__link--current">
+              Популярные
+            </a>
+          </li>
+          <li class="tour__item" href="#">
+            <a class="tour__link" href="">
+              Авторские
+            </a>
+          </li>
+          <li class="tour__item">
+            <a class="tour__link" href="">
+              Походы
+            </a>
+          </li>
+          <li class="tour__item">
+            <a class="tour__link" href="">
+              Сплавы
+            </a>
+          </li>
+          <li class="tour__item">
+            <a class="tour__link" href="">
+              Велопрогулки
+            </a>
+          </li>
+        </ul>
+
+        <div class="card">
+          <ul class="card__list">
+            <li class="card__item">
+              <picture>
+                <source type="image/webp" srcset="./img/card-tour-photo-1.webp 1x, ./img/card-tour-photo-1@2x.webp 2x">
+                <img class="card__link" src="./img/card-tour-photo-1.jpg" srcset="./img/card-tour-photo-1@2x.jpg 2x" decoding="async" alt="Фотография машины.">
+              </picture>
+              <div class="card__info">
+                <h3 class="card__title">Путешествие в горы</h3>
+                <b class="card__price">от 80 000 руб</b>
+                <a class="card__button" href="#" >
+                  Подробнее
+                  <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22.7004 12.2833L16.1535 5.79682C15.7541 5.40106 15.1063 5.40106 14.7068 5.79682C14.3073 6.19266 14.3073 6.83433 14.7068 7.23017L19.5074 11.9865H2.02294C1.45803 11.9865 1 12.4403 1 13C1 13.5596 1.45803 14.0135 2.02294 14.0135H19.5074L14.707 18.7698C14.3075 19.1656 14.3075 19.8073 14.707 20.2032C14.9067 20.4009 15.1686 20.5 15.4304 20.5C15.6921 20.5 15.9539 20.4009 16.1537 20.2032L22.7004 13.7167C23.0999 13.3208 23.0999 12.6792 22.7004 12.2833Z" fill="white"/>
+                  </svg>
+                </a>
+              </div>
+            </li>
+            <li class="card__item">
+              <picture>
+                <source type="image/webp" srcset="./img/card-tour-photo-2.webp 1x, ./img/card-tour-photo-2@2x.webp 2x">
+                <img class="card__link" src="./img/card-tour-photo-2.jpg" srcset="./img/card-tour-photo-2@2x.jpg 2x" decoding="async" alt="Девушка в пустыне.">
+              </picture>
+            <div class="card__info">
+              <h3 class="card__title">Путешествие в горы</h3>
+              <b class="card__price">от 80 000 руб</b>
+              <a class="card__button" href="#" >
+                Подробнее
+                <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22.7004 12.2833L16.1535 5.79682C15.7541 5.40106 15.1063 5.40106 14.7068 5.79682C14.3073 6.19266 14.3073 6.83433 14.7068 7.23017L19.5074 11.9865H2.02294C1.45803 11.9865 1 12.4403 1 13C1 13.5596 1.45803 14.0135 2.02294 14.0135H19.5074L14.707 18.7698C14.3075 19.1656 14.3075 19.8073 14.707 20.2032C14.9067 20.4009 15.1686 20.5 15.4304 20.5C15.6921 20.5 15.9539 20.4009 16.1537 20.2032L22.7004 13.7167C23.0999 13.3208 23.0999 12.6792 22.7004 12.2833Z" fill="white"/>
+                </svg>
+              </a>
+            </div>
+            </li>
+            <li class="card__item">
+              <picture>
+                <source type="image/webp" srcset="./img/card-tour-photo-3.webp 1x, ./img/card-tour-photo-3@2x.webp 2x">
+                <img class="card__link" src="./img/card-tour-photo-3.jpg" srcset="./img/card-tour-photo-3@2x.jpg 2x" decoding="async" alt="Горы.">
+              </picture>
+            <div class="card__info">
+              <h3 class="card__title">Путешествие в горы</h3>
+              <b class="card__price">от 80 000 руб</b>
+              <a class="card__button" href="#" >
+                Подробнее
+                <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22.7004 12.2833L16.1535 5.79682C15.7541 5.40106 15.1063 5.40106 14.7068 5.79682C14.3073 6.19266 14.3073 6.83433 14.7068 7.23017L19.5074 11.9865H2.02294C1.45803 11.9865 1 12.4403 1 13C1 13.5596 1.45803 14.0135 2.02294 14.0135H19.5074L14.707 18.7698C14.3075 19.1656 14.3075 19.8073 14.707 20.2032C14.9067 20.4009 15.1686 20.5 15.4304 20.5C15.6921 20.5 15.9539 20.4009 16.1537 20.2032L22.7004 13.7167C23.0999 13.3208 23.0999 12.6792 22.7004 12.2833Z" fill="white"/>
+                </svg>
+              </a>
+            </div>
+            </li>
+            <li class="card__item">
+              <picture>
+                <source type="image/webp" srcset="./img/card-tour-photo-4.webp 1x, ./img/card-tour-photo-4@2x.webp 2x">
+                <img class="card__link" src="./img/card-tour-photo-4.jpg" srcset="./img/card-tour-photo-4@2x.jpg 2x" decoding="async" alt="Город.">
+              </picture>
+            <div class="card__info">
+              <h3 class="card__title">Путешествие в горы</h3>
+              <b class="card__price">от 80 000 руб</b>
+              <a class="card__button" href="#" >
+                Подробнее
+                <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22.7004 12.2833L16.1535 5.79682C15.7541 5.40106 15.1063 5.40106 14.7068 5.79682C14.3073 6.19266 14.3073 6.83433 14.7068 7.23017L19.5074 11.9865H2.02294C1.45803 11.9865 1 12.4403 1 13C1 13.5596 1.45803 14.0135 2.02294 14.0135H19.5074L14.707 18.7698C14.3075 19.1656 14.3075 19.8073 14.707 20.2032C14.9067 20.4009 15.1686 20.5 15.4304 20.5C15.6921 20.5 15.9539 20.4009 16.1537 20.2032L22.7004 13.7167C23.0999 13.3208 23.0999 12.6792 22.7004 12.2833Z" fill="white"/>
+                </svg>
+              </a>
+            </div>
+            </li>
+            <li class="card__item">
+              <picture>
+                <source type="image/webp" srcset="./img/card-tour-photo-5.webp 1x, ./img/card-tour-photo-5@2x.webp 2x">
+                <img class="card__link" src="./img/card-tour-photo-5.jpg" srcset="./img/card-tour-photo-5@2x.jpg 2x" decoding="async" alt="Пляж.">
+              </picture>
+            <div class="card__info">
+              <h3 class="card__title">Путешествие в горы</h3>
+              <b class="card__price">от 80 000 руб</b>
+              <a class="card__button" href="#" >
+                Подробнее
+                <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22.7004 12.2833L16.1535 5.79682C15.7541 5.40106 15.1063 5.40106 14.7068 5.79682C14.3073 6.19266 14.3073 6.83433 14.7068 7.23017L19.5074 11.9865H2.02294C1.45803 11.9865 1 12.4403 1 13C1 13.5596 1.45803 14.0135 2.02294 14.0135H19.5074L14.707 18.7698C14.3075 19.1656 14.3075 19.8073 14.707 20.2032C14.9067 20.4009 15.1686 20.5 15.4304 20.5C15.6921 20.5 15.9539 20.4009 16.1537 20.2032L22.7004 13.7167C23.0999 13.3208 23.0999 12.6792 22.7004 12.2833Z" fill="white"/>
+                </svg>
+              </a>
+            </div>
+            </li>
+            <li class="card__item">
+              <picture>
+                <source type="image/webp" srcset="./img/card-tour-photo-6.webp 1x, ./img/card-tour-photo-6@2x.webp 2x">
+                <img class="card__link" src="./img/card-tour-photo-6.jpg" srcset="./img/card-tour-photo-6@2x.jpg 2x" decoding="async" alt="Озеро.">
+              </picture>
+
+            <div class="card__info">
+              <h3 class="card__title">Путешествие в горы</h3>
+              <b class="card__price">от 80 000 руб</b>
+              <a class="card__button" href="#" >
+                Подробнее
+                <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22.7004 12.2833L16.1535 5.79682C15.7541 5.40106 15.1063 5.40106 14.7068 5.79682C14.3073 6.19266 14.3073 6.83433 14.7068 7.23017L19.5074 11.9865H2.02294C1.45803 11.9865 1 12.4403 1 13C1 13.5596 1.45803 14.0135 2.02294 14.0135H19.5074L14.707 18.7698C14.3075 19.1656 14.3075 19.8073 14.707 20.2032C14.9067 20.4009 15.1686 20.5 15.4304 20.5C15.6921 20.5 15.9539 20.4009 16.1537 20.2032L22.7004 13.7167C23.0999 13.3208 23.0999 12.6792 22.7004 12.2833Z" fill="white"/>
+                </svg>
+              </a>
+            </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>

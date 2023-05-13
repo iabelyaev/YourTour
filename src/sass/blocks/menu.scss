@@ -53,6 +53,22 @@
     text-decoration: none;
     color: inherit;
   }
+
+  @media (any-hover: hover) {
+    &:hover {
+      border-bottom: 1px solid $basic-white;
+    }
+  }
+
+  &:focus-visible {
+    outline: 2px solid rgb(221, 160, 221);
+    outline-offset: 2px;
+  }
+
+  &:active {
+    color: rgb(255, 255, 255, 0.3);
+    border-color: rgb(255, 255, 255, 0.3);
+  }
 }
 
 // Logo
@@ -80,6 +96,22 @@
   @include tablet {
     font-size: 20px;
     line-height: 28px;
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      border-bottom: 1px solid $basic-white;
+    }
+  }
+
+  &:focus-visible {
+    outline: 2px solid rgb(221, 160, 221);
+    outline-offset: 2px;
+  }
+
+  &:active {
+    color: rgb(255, 255, 255, 0.3);
+    border-color: rgb(255, 255, 255, 0.3);
   }
 }
 

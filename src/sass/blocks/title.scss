@@ -1,0 +1,18 @@
+// Title
+
+.title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 38px;
+  text-align: center;
+  color: inherit;
+  letter-spacing: 0.02em;
+
+  @include tablet {
+    margin-bottom: 35px;
+    font-size: 59px;
+    line-height: 73px;
+  }
+}

@@ -1,0 +1,51 @@
+// Tour
+.tour {
+  padding-top: 75px;
+}
+
+// List
+
+.tour__list {
+  @include overlay;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  font-size: 16px;
+  margin-bottom: 50px;
+
+  @include tablet {
+    font-size: 23px;
+    margin-bottom: 100px;
+    grid-template-columns: repeat(5, min-content);
+    gap: 30px;
+    grid-template-rows: min-content;
+  }
+}
+
+
+// Item
+
+.tour__item {
+  font-weight: 700;
+  line-height: 23px;
+  justify-self: center;
+
+  @include tablet {
+    line-height: 28px;
+  }
+}
+
+// Link
+
+.tour__link {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+
+  &--current {
+    color: $basic-orange;
+    border-bottom: 2px solid $basic-orange;
+  }
+}

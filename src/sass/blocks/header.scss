@@ -25,8 +25,7 @@
 .header__title-wrapper {
   display: flex;
   flex-direction: column;
-  padding-top: 52px;
-  padding-bottom: 52px;
+  padding: 52px 25px;
   margin: 0 auto;
   max-width: 768px;
 
@@ -84,6 +83,7 @@
 // Link
 
 .header__link {
+  display: inline-block;
   text-decoration: none;
   color: $basic-black;
   background-color: $basic-white;
@@ -99,5 +99,22 @@
   @include tablet {
     font-size: 17px;
     line-height: 24px;
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: $basic-orange;
+      color: $basic-white;
+    }
+  }
+
+  &:focus-visible {
+    outline: 2px solid rgb(221, 160, 221);
+    outline-offset: 2px;
+  }
+
+  &:active {
+    background-color: $basic-semi-orange;
+    color: $basic-black;
   }
 }
