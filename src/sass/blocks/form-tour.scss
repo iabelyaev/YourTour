@@ -1,0 +1,11 @@
+// Descriptio
+
+.form-tour__description {
+  color: $basic-gray;
+  margin-bottom: 40px;
+
+  @include tablet {
+    padding: 0 255px;
+    margin-bottom: 100px;
+  }
+}

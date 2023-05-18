@@ -7,10 +7,18 @@
 
 // Blocks
 
+@import "./blocks/description.scss";
+@import "./blocks/title.scss";
+@import "./blocks/wrapper";
+@import "./blocks/visually-hidden.scss";
+@import "./blocks/button.scss";
 @import "./blocks/page.scss";
 @import "./blocks/header.scss";
 @import "./blocks/menu.scss";
 @import "./blocks/tour.scss";
 @import "./blocks/card.scss";
-@import "./blocks/title.scss";
-@import "./blocks/wrapper";
+@import "./blocks/reviews.scss";
+@import "./blocks/photo.scss";
+@import "./blocks/form-tour.scss";
+@import "./blocks/form.scss";
+

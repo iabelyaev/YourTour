@@ -1,0 +1,19 @@
+// Description
+
+.description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
+  color: inherit;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 28px;
+    padding: 0 150px;
+  }
+
+  @include desktop {
+    padding: 0 100px;
+  }
+}

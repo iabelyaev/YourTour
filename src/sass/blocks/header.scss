@@ -5,14 +5,25 @@
   color: $basic-white;
 
   &--inner {
+    min-height: 488px;
+    width: 100%;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 39.9%),
       linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url("../../img/bg-header.png");
-    height: 488px;
-    width: 100%;
+      url("../../img/bg-header.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+
+    @media (min-resolution: 2dppx) {
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 39.9%),
+        linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("../../img/bg-header@2x.jpg");
+
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
 
     @include tablet {
       height: 831px;
@@ -62,21 +73,9 @@
 .header__description {
   margin: 0;
   margin-bottom: 40px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 23px;
-  text-align: center;
-  color: inherit;
 
   @include tablet {
-    font-size: 20px;
-    line-height: 28px;
     margin-bottom: 50px;
-    padding: 0 150px;
-  }
-
-  @include desktop {
-    padding: 0 100px;
   }
 }
 
