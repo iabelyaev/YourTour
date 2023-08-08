@@ -11,401 +11,202 @@
   <link rel="stylesheet" href="./css/style.min.css">
   <title>YourTour</title>
 </head>
-<body class="page__body">
-  <header class="header header--inner">
-    <nav class="menu">
-      <a class="menu__logo" href="#">
-        <img src="img/yourtour.svg" alt="Логотип yourtour">
+<body>
+  <div class="navigation">
+    <div class="navigation__inner">
+      <div class="navigation__logo">
+        <a href="/" aria-label="Logotip YourTour">
+          <img src="./img/yourtour.svg" alt="Logotip YourTour.">
         </a>
-      <ul class="menu__list">
-        <li class="menu__item">
-          <a class="menu__link" href="#">
-            Туры
-          </a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#">
-            Создать тур
-          </a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#">
-            Отзывы
-          </a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#">
-            Истории
-          </a>
-        </li>
-      </ul>
-      <a class="menu__phone" href="tel:+7 999 999 99 99">+7 999 999 99 99</a>
-    </nav>
-    <div class="header__title-wrapper">
-      <h1 class="header__title">Идеальные путешествия существуют</h1>
-      <p class="header__description description">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
-      <a class="header__link" href="#">Найти тур</a>
+      </div>
+      <div>
+      <nav class="navigation__navbar">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="">Туры</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="">Создать тур</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="">Отзывы</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="">Истории</a>
+            </li>
+          </ul>
+      </nav>
+      </div>
+      <a class="navigation__phone" href="">+7 999 999 99 99</a>
+    </div>
+  </div>
+  <header class="header header__inner">
+    <div class="header__content">
+      <h1>
+        Идеальные путешествия существуют
+      </h1>
+      <p>
+        Идейные соображения высшего порядка, а также рамки и место обучения кадров
+      </p>
+      <a class="header__link" href="/">
+        Найти тур
+      </a>
     </div>
   </header>
-  <main class="main">
+  <main>
     <section class="tour">
-      <div class="wrapper">
-        <h2 class="tour__title title">Выбери свой тур</h2>
-        <ul class="tour__list">
-          <li class="tour__item">
-            <a class="tour__link tour__link--current">
-              Популярные
-            </a>
-          </li>
-          <li class="tour__item">
-            <a class="tour__link" href="#">
-              Авторские
-            </a>
-          </li>
-          <li class="tour__item">
-            <a class="tour__link" href="#">
-              Походы
-            </a>
-          </li>
-          <li class="tour__item">
-            <a class="tour__link" href="#">
-              Сплавы
-            </a>
-          </li>
-          <li class="tour__item">
-            <a class="tour__link" href="#">
-              Велопрогулки
-            </a>
-          </li>
-        </ul>
-        <div class="card">
-          <ul class="card__list">
-            <li class="card__item">
-              <a class="card__link" href="#">
-                <picture>
-                  <source type="image/webp" srcset="./img/card-tour-photo-1.webp 1x, ./img/card-tour-photo-1@2x.webp 2x">
-                  <img src="./img/card-tour-photo-1.jpg" srcset="./img/card-tour-photo-1@2x.jpg 2x" decoding="async" alt="Фотография машины.">
-                </picture>
+      <div class="conteiner">
+        <div class="tour__contet">
+          <h2>
+            Выбери свой тур
+          </h2>
+          <ul class="tour__list">
+            <li class="tour__item">
+              <a class="tour__link tour__link--active" href="">
+                Популярные
               </a>
-              <div class="card__info">
-                <h3 class="card__title">Путешествие в&nbsp;горы</h3>
-                <b class="card__price">от 80 000 руб</b>
-                <a class="card__button" href="#" >
-                  Подробнее
-                  <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M22.7004 12.2833L16.1535 5.79682C15.7541 5.40106 15.1063 5.40106 14.7068 5.79682C14.3073 6.19266 14.3073 6.83433 14.7068 7.23017L19.5074 11.9865H2.02294C1.45803 11.9865 1 12.4403 1 13C1 13.5596 1.45803 14.0135 2.02294 14.0135H19.5074L14.707 18.7698C14.3075 19.1656 14.3075 19.8073 14.707 20.2032C14.9067 20.4009 15.1686 20.5 15.4304 20.5C15.6921 20.5 15.9539 20.4009 16.1537 20.2032L22.7004 13.7167C23.0999 13.3208 23.0999 12.6792 22.7004 12.2833Z" fill="white"/>
-                  </svg>
-                </a>
+            </li>
+            <li class="tour__item">
+              <a class="tour__link" href="">
+                Авторские
+              </a>
+            </li>
+            <li class="tour__item">
+              <a class="tour__link" href="">
+                Походы
+              </a>
+            </li>
+            <li class="tour__item">
+              <a class="tour__link" href="">
+                Сплавы
+              </a>
+            </li>
+            <li class="tour__item">
+              <a class="tour__link" href="">
+                Велопрогулки
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="tour__cards tour-card">
+          <ul class="tour-card__list">
+            <li class="tour-card__item">
+                <img src="./img/card-tour-photo-1.jpg" width="318" height="318" alt="">
+              <div class="tour-card__inner">
+              <h3>
+                Путешествие в&nbsp;горы
+              </h3>
+              <b>
+                от 80 000 руб
+              </b>
               </div>
-            </li>
-            <li class="card__item">
-              <a href="#" class="card__link">
-                <picture>
-                  <source type="image/webp" srcset="./img/card-tour-photo-2.webp 1x, ./img/card-tour-photo-2@2x.webp 2x">
-                  <img src="./img/card-tour-photo-2.jpg" srcset="./img/card-tour-photo-2@2x.jpg 2x" decoding="async" alt="Девушка в пустыне.">
-                </picture>
-              </a>
-            <div class="card__info">
-              <h3 class="card__title">Путешествие в&nbsp;горы</h3>
-              <b class="card__price">от 80 000 руб</b>
-              <a class="card__button" href="#" >
+              <a href="">
                 Подробнее
                 <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M22.7004 12.2833L16.1535 5.79682C15.7541 5.40106 15.1063 5.40106 14.7068 5.79682C14.3073 6.19266 14.3073 6.83433 14.7068 7.23017L19.5074 11.9865H2.02294C1.45803 11.9865 1 12.4403 1 13C1 13.5596 1.45803 14.0135 2.02294 14.0135H19.5074L14.707 18.7698C14.3075 19.1656 14.3075 19.8073 14.707 20.2032C14.9067 20.4009 15.1686 20.5 15.4304 20.5C15.6921 20.5 15.9539 20.4009 16.1537 20.2032L22.7004 13.7167C23.0999 13.3208 23.0999 12.6792 22.7004 12.2833Z" fill="white"/>
                 </svg>
               </a>
-            </div>
+              <div class="tour-card__overlay"></div>
             </li>
-            <li class="card__item">
-              <a class="card__link" href="#">
-                <picture>
-                  <source type="image/webp" srcset="./img/card-tour-photo-3.webp 1x, ./img/card-tour-photo-3@2x.webp 2x">
-                  <img src="./img/card-tour-photo-3.jpg" srcset="./img/card-tour-photo-3@2x.jpg 2x" decoding="async" alt="Горы.">
-                </picture>
-              </a>
-            <div class="card__info">
-              <h3 class="card__title">Путешествие в&nbsp;горы</h3>
-              <b class="card__price">от 80 000 руб</b>
-              <a class="card__button" href="#" >
+            <li class="tour-card__item">
+              <img src="./img/card-tour-photo-2.jpg" alt="">
+              <div class="tour-card__inner">
+                <h3>
+                  Путешествие в&nbsp;горы
+                </h3>
+                <b>
+                  от 80 000 руб
+                </b>
+              </div>
+              <a href="">
                 Подробнее
                 <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M22.7004 12.2833L16.1535 5.79682C15.7541 5.40106 15.1063 5.40106 14.7068 5.79682C14.3073 6.19266 14.3073 6.83433 14.7068 7.23017L19.5074 11.9865H2.02294C1.45803 11.9865 1 12.4403 1 13C1 13.5596 1.45803 14.0135 2.02294 14.0135H19.5074L14.707 18.7698C14.3075 19.1656 14.3075 19.8073 14.707 20.2032C14.9067 20.4009 15.1686 20.5 15.4304 20.5C15.6921 20.5 15.9539 20.4009 16.1537 20.2032L22.7004 13.7167C23.0999 13.3208 23.0999 12.6792 22.7004 12.2833Z" fill="white"/>
                 </svg>
               </a>
-            </div>
+              <div class="tour-card__overlay"></div>
             </li>
-            <li class="card__item">
-              <a class="card__link" href="#">
-                <picture>
-                  <source type="image/webp" srcset="./img/card-tour-photo-4.webp 1x, ./img/card-tour-photo-4@2x.webp 2x">
-                  <img src="./img/card-tour-photo-4.jpg" srcset="./img/card-tour-photo-4@2x.jpg 2x" decoding="async" alt="Город.">
-                </picture>
-              </a>
-            <div class="card__info">
-              <h3 class="card__title">Путешествие в&nbsp;горы</h3>
-              <b class="card__price">от 80 000 руб</b>
-              <a class="card__button" href="#" >
+            <li class="tour-card__item">
+              <img src="./img/card-tour-photo-3.jpg" alt="">
+              <div class="tour-card__inner">
+                <h3>
+                  Путешествие в&nbsp;горы
+                </h3>
+                <b>
+                  от 80 000 руб
+                </b>
+
+              </div>
+              <a href="">
                 Подробнее
                 <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M22.7004 12.2833L16.1535 5.79682C15.7541 5.40106 15.1063 5.40106 14.7068 5.79682C14.3073 6.19266 14.3073 6.83433 14.7068 7.23017L19.5074 11.9865H2.02294C1.45803 11.9865 1 12.4403 1 13C1 13.5596 1.45803 14.0135 2.02294 14.0135H19.5074L14.707 18.7698C14.3075 19.1656 14.3075 19.8073 14.707 20.2032C14.9067 20.4009 15.1686 20.5 15.4304 20.5C15.6921 20.5 15.9539 20.4009 16.1537 20.2032L22.7004 13.7167C23.0999 13.3208 23.0999 12.6792 22.7004 12.2833Z" fill="white"/>
                 </svg>
               </a>
-            </div>
+              <div class="tour-card__overlay"></div>
             </li>
-            <li class="card__item">
-              <a class="card__link" href="#">
-                <picture>
-                  <source type="image/webp" srcset="./img/card-tour-photo-5.webp 1x, ./img/card-tour-photo-5@2x.webp 2x">
-                  <img src="./img/card-tour-photo-5.jpg" srcset="./img/card-tour-photo-5@2x.jpg 2x" decoding="async" alt="Пляж.">
-                </picture>
-              </a>
-            <div class="card__info">
-              <h3 class="card__title">Путешествие в&nbsp;горы</h3>
-              <b class="card__price">от 80 000 руб</b>
-              <a class="card__button" href="#" >
+            <li class="tour-card__item">
+              <img src="./img/card-tour-photo-4.jpg" alt="">
+              <div class="tour-card__inner">
+                <h3>
+                  Путешествие в&nbsp;горы
+                </h3>
+                <b>
+                  от 80 000 руб
+                </b>
+              </div>
+              <a href="">
                 Подробнее
                 <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M22.7004 12.2833L16.1535 5.79682C15.7541 5.40106 15.1063 5.40106 14.7068 5.79682C14.3073 6.19266 14.3073 6.83433 14.7068 7.23017L19.5074 11.9865H2.02294C1.45803 11.9865 1 12.4403 1 13C1 13.5596 1.45803 14.0135 2.02294 14.0135H19.5074L14.707 18.7698C14.3075 19.1656 14.3075 19.8073 14.707 20.2032C14.9067 20.4009 15.1686 20.5 15.4304 20.5C15.6921 20.5 15.9539 20.4009 16.1537 20.2032L22.7004 13.7167C23.0999 13.3208 23.0999 12.6792 22.7004 12.2833Z" fill="white"/>
                 </svg>
               </a>
-            </div>
+              <div class="tour-card__overlay"></div>
             </li>
-            <li class="card__item">
-              <a class="card__link" href="#">
-                <picture>
-                  <source type="image/webp" srcset="./img/card-tour-photo-6.webp 1x, ./img/card-tour-photo-6@2x.webp 2x">
-                  <img src="./img/card-tour-photo-6.jpg" srcset="./img/card-tour-photo-6@2x.jpg 2x" decoding="async" alt="Озеро.">
-                </picture>
-              </a>
-            <div class="card__info">
-              <h3 class="card__title">Путешествие в горы</h3>
-              <b class="card__price">от 80 000 руб</b>
-              <a class="card__button" href="#" >
+            <li class="tour-card__item">
+              <img src="./img/card-tour-photo-5.jpg" alt="">
+              <div class="tour-card__inner">
+                <h3>
+                  Путешествие в&nbsp;горы
+                </h3>
+                <b>
+                  от 80 000 руб
+                </b>
+
+              </div>
+              <a href="">
                 Подробнее
                 <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M22.7004 12.2833L16.1535 5.79682C15.7541 5.40106 15.1063 5.40106 14.7068 5.79682C14.3073 6.19266 14.3073 6.83433 14.7068 7.23017L19.5074 11.9865H2.02294C1.45803 11.9865 1 12.4403 1 13C1 13.5596 1.45803 14.0135 2.02294 14.0135H19.5074L14.707 18.7698C14.3075 19.1656 14.3075 19.8073 14.707 20.2032C14.9067 20.4009 15.1686 20.5 15.4304 20.5C15.6921 20.5 15.9539 20.4009 16.1537 20.2032L22.7004 13.7167C23.0999 13.3208 23.0999 12.6792 22.7004 12.2833Z" fill="white"/>
                 </svg>
               </a>
-            </div>
+              <div class="tour-card__overlay"></div>
+            </li>
+            <li class="tour-card__item">
+              <img src="./img/card-tour-photo-6.jpg"  alt="">
+              <div class="tour-card__inner">
+                <h3>
+                  Путешествие в&nbsp;горы
+                </h3>
+                <b>
+                  от 80 000 руб
+                </b>
+
+              </div>
+              <a href="">
+                Подробнее
+                <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22.7004 12.2833L16.1535 5.79682C15.7541 5.40106 15.1063 5.40106 14.7068 5.79682C14.3073 6.19266 14.3073 6.83433 14.7068 7.23017L19.5074 11.9865H2.02294C1.45803 11.9865 1 12.4403 1 13C1 13.5596 1.45803 14.0135 2.02294 14.0135H19.5074L14.707 18.7698C14.3075 19.1656 14.3075 19.8073 14.707 20.2032C14.9067 20.4009 15.1686 20.5 15.4304 20.5C15.6921 20.5 15.9539 20.4009 16.1537 20.2032L22.7004 13.7167C23.0999 13.3208 23.0999 12.6792 22.7004 12.2833Z" fill="white"/>
+                </svg>
+              </a>
+              <div class="tour-card__overlay"></div>
             </li>
           </ul>
         </div>
       </div>
-    </section>
-    <section class="form-tour tour">
-      <div class="wrapper">
-        <h2 class="form-tour__title title">Собери свой тур</h2>
-        <p class="form-tour__description description">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
-        <form class="form" action="" method="post">
-          <fieldset class="form__group">
-            <ul class="form__list">
-              <li class="form__item">
-                <label class="form__field" for="">
-                  <span class="form__field-title">Имя</span>
-                  <input class="form__input" type="text" placeholder="Введите Ваше имя" name="name" id="name" required>
-                </label>
-              </li>
-              <li class="form__item">
-                <label class="form__field" for="">
-                  <span class="form__field-title">Направление</span>
-                  <select class="form__input form__select" name="tour:" id="form__select" placeholder="Куда хотите ехать" required>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                  </select>
-                </label>
-              </li>
-              <li class="form__item">
-                <label class="form__field" for="">
-                  <span class="form__field-title">Email</span>
-                  <input class="form__input" type="email" name="email" id="email" placeholder="example@mail.com" required>
-                </label>
-              </li>
-              <li class="form__item">
-                <label class="form__field" for="">
-                  <span class="form__field-title">Телефон</span>
-                  <input class="form__input" type="tel" name="phone" id="phone" placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _" required>
-                </label>
-              </li>
-              <li class="form__item">
-                <label class="form__field" for="">
-                  <span class="form__field-title">Дата от</span>
-                  <input class="form__input" type="date" placeholder="ДД.ММ.ГГГГ" required>
-                </label>
-              </li>
-              <li class="form__item">
-                <label class="form__field" for="">
-                  <span class="form__field-title">Дата до</span>
-                  <input class="form__input" type="date" placeholder="ДД.ММ.ГГГГ" required>
-                </label>
-              </li>
-              <li class="form__item form__item-textarea">
-                <label class="form__field" for="">
-                  <span class="form__field-title">Комментарий</span>
-                  <textarea class="form__input form__textarea" type="text" placeholder="ДД.ММ.ГГГГ" required>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="form__group">
-            <legend class="form__field-title">Вам есть 18 лет?</legend>
-            <ul class="form__list form__list-checkbox">
-              <li class="form__item form__item-checkbox">
-                <label class="form__field-radiobox">
-                  <input class="visually-hidden form__checkbox" type="radio" name="Ответ" value="Да">
-                  <span class="form__checkbox form__checkbox--control"></span>
-                  <span class="form__field-title">Да</span>
-                </label>
-              </li>
-              <li class="form__item form__item-checkbox">
-                <label class="form__field-radiobox">
-                  <input class="visually-hidden form__checkbox" type="radio" name="Ответ" value="Нет">
-                  <span class="form__checkbox form__checkbox--control"></span>
-                  <span class="form__field-title">Нет</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="form__group">
-            <label class="form__field-checkbox">
-              <input class="visually-hidden form__input-checkbox" type="checkbox" name="Возраст" id="vin" checked>
-              <span class="form__input-checkbox form__input-checkbox--control"></span>
-              <span class="form__field-title form__field-checkbox-text">Нажимая кнопку, я принимаю условия<a class="form__field-checkbox-link" href="#"> Лицензионного договора</a></span>
-            </label>
-          </fieldset>
-          <div class="form__wrapper-button">
-            <button class="button__sub button" type="submit">Найти тур</button>
-            <button class="button__res button" type="reset">Сбросить</button>
-          </div>
-        </form>
-      </div>
-    </section>
-    <section class="reviews tour">
-      <div class="wrapper">
-        <h2 class="reviews__title title">Собери свой тур</h2>
-        <p class="reviews__description description">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
-        <ul class="reviews__list">
-          <li class="reviews__item">
-            <p class="reviews__item-text">Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции позволяет оценить значение модели развития.</p>
-            <div class="reviews__item-info">
-              <h3 class="reviews__item-title">Мария</h3>
-              <span class="reviews__item-description">Тур: Вдали от дома </span>
-              <div class="reviews-avatar">
-                <picture>
-                  <source srcset="./img/avatar-maria.webp 1x, ./img/avatar-maria@2x.webp 2x" type="image/webp">
-                  <img class="reviews__item-avatar" src="./img/avatar-maria.jpg" srcset="./img/avatar-maria@2x.jpg 2x" width="75" height="75" alt="Портрет Марии.">
-                </picture>
-              </div>
-            </div>
-          </li>
-          <li class="reviews__item">
-            <p class="reviews__item-text">Равным образом постоянный количественный рост и сфера нашей активности играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям.
-              <br>
-              Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. Повседневная практика показывает, что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития.</p>
-              <div class="reviews__item-info">
-                <h3 class="reviews__item-title">Павел</h3>
-                <span class="reviews__item-description">Тур: Вдали от дома </span>
-                <div class="reviews-avatar">
-                  <picture>
-                    <source srcset="./img/avatar-pavel.webp 1x, ./img/avatar-pavel@2x.webp 2x" type="image/webp">
-                    <img class="reviews__item-avatar" src="./img/avatar-pavel.jpg" srcset="./img/avatar-pavel@2x.jpg 2x" width="75" height="75" alt="Портрет Марии.">
-                  </picture>
-                </div>
-              </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="photo tour">
-      <div class="wrapper">
-        <h2 class="photo__title title">Собери свой тур</h2>
-        <p class="photo__description description">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
-      </div>
 
-      <ul class="photo__list">
-        <li class="photo__item">
-          <picture>
-            <source srcset="./img/travel photo-1.webp 1x, ./img/travel photo-1@2x.webp 2x" type="image/webp">
-            <img src="./img/travel photo-1.jpg" srcset="./img/travel photo-1@2x.jpg 2x" alt="Фотография самолета.">
-          </picture>
-        </li>
-        <li class="photo__item photo__item--hidden">
-          <picture>
-            <source srcset="./img/travel photo-2.webp 1x, ./img/travel photo-2@2x.webp 2x" type="image/webp">
-            <img src="./img/travel photo-2.jpg" srcset="./img/travel photo-2@2x.jpg 2x" alt="Фотография самолета.">
-          </picture>
-        </li>
-        <li class="photo__item photo__item--close">
-          <picture>
-            <source srcset="./img/travel photo-3.webp 1x, ./img/travel photo-3@2x.webp 2x" type="image/webp">
-            <img src="./img/travel photo-3.jpg" srcset="./img/travel photo-3@2x.jpg 2x" alt="Фотография самолета.">
-          </picture>
-        </li>
-        <li class="photo__item">
-          <picture>
-            <source srcset="./img/travel photo-4.webp 1x, ./img/travel photo-4@2x.webp 2x" type="image/webp">
-            <img src="./img/travel photo-4.jpg" srcset="./img/travel photo-4@2x.jpg 2x" alt="Фотография самолета.">
-          </picture>
-        </li>
-      </ul>
-      <ul class="photo__list photo__list--big">
-          <li class="photo__item">
-            <picture>
-              <source srcset="./img/travel photo-5.webp 1x, ./img/travel photo-5@2x.webp 2x" type="image/webp">
-              <img src="./img/travel photo-5.jpg" srcset="./img/travel photo-5@2x.jpg 2x" width="100" height="110" alt="Фотография самолета.">
-            </picture>
-          </li>
-          <li class="photo__item photo__item--hidden">
-            <picture>
-              <source srcset="./img/travel photo-6.webp 1x, ./img/travel photo-6@2x.webp 2x" type="image/webp">
-              <img src="./img/travel photo-6.jpg" srcset="./img/travel photo-6@2x.jpg 2x" width="100" height="110" alt="Фотография самолета.">
-            </picture>
-          </li>
-          <li class="photo__item photo__item--close">
-            <picture>
-              <source srcset="./img/travel photo-7.webp 1x, ./img/travel photo-7@2x.webp 2x" type="image/webp">
-              <img src="./img/travel photo-7.jpg" srcset="./img/travel photo-7@2x.jpg 2x" width="100" height="110" alt="Фотография самолета.">
-            </picture>
-          </li>
-          <li class="photo__item">
-            <picture>
-              <source srcset="./img/travel photo-8.webp 1x, ./img/travel photo-8@2x.webp 2x" type="image/webp">
-              <img src="./img/travel photo-8.jpg" srcset="./img/travel photo-8@2x.jpg 2x" width="100" height="110" alt="Фотография самолета.">
-            </picture>
-          </li>
-          <li class="photo__item">
-            <picture>
-              <source srcset="./img/travel photo-13.webp 1x, ./img/travel photo-13@2x.webp 2x" type="image/webp">
-              <img src="./img/travel photo-13.jpg" srcset="./img/travel photo-13@2x.jpg 2x" width="100" height="110" alt="Фотография самолета.">
-            </picture>
-          </li>
-      </ul>
-      <ul class="photo__list">
-          <li class="photo__item">
-            <picture>
-              <source srcset="./img/travel photo-9.webp 1x, ./img/travel photo-9@2x.webp 2x" type="image/webp">
-              <img src="./img/travel photo-9.jpg" srcset="./img/travel photo-9@2x.jpg 2x" alt="Фотография самолета.">
-            </picture>
-          </li>
-          <li class="photo__item">
-            <picture>
-              <source srcset="./img/travel photo-10.webp 1x, ./img/travel photo-10@2x.webp 2x" type="image/webp">
-              <img src="./img/travel photo-10.jpg" srcset="./img/travel photo-10@2x.jpg 2x" alt="Фотография самолета.">
-            </picture>
-          </li>
-          <li class="photo__item photo__item--close">
-            <picture>
-              <source srcset="./img/travel photo-11.webp 1x, ./img/travel photo-11@2x.webp 2x" type="image/webp">
-              <img src="./img/travel photo-11.jpg" srcset="./img/travel photo-11@2x.jpg 2x" alt="Фотография самолета.">
-            </picture>
-          </li>
-          <li class="photo__item photo__item--hidden">
-            <picture>
-              <source srcset="./img/travel photo-12.webp 1x, ./img/travel photo-12@2x.webp 2x" type="image/webp">
-              <img src="./img/travel photo-12.jpg" srcset="./img/travel photo-12@2x.jpg 2x" alt="Фотография самолета.">
-            </picture>
-          </li>
-      </ul>
     </section>
   </main>
+  <script src="./js/scripts.js"></script>
 </body>
 </html>

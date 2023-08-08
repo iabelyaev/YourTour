@@ -1,17 +1,17 @@
-// Wrapper
+// Container
 
-.wrapper {
+.conteiner {
   width: 100%;
   padding: 0 21px;
   margin: 0 auto;
+  max-width: 1170px;
 
   @include tablet {
     padding: 0 53px;
   }
 
   @include desktop {
-    position: relative;
-    max-width: 1270px;
-    padding: 0 50px;
+    padding: 0 15px;
   }
 }
+

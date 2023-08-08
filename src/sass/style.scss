@@ -1,24 +1,13 @@
 // Global
 
-@import "./variables.scss";
-@import "./mixins.scss";
+@import "./globals/variables.scss";
+@import "./globals/mixins.scss";
 @import "./fonts.scss";
-@import "./reboot.scss";
+@import "./globals/reboot.scss";
 
 // Blocks
-
-@import "./blocks/description.scss";
-@import "./blocks/title.scss";
-@import "./blocks/wrapper";
-@import "./blocks/visually-hidden.scss";
-@import "./blocks/button.scss";
-@import "./blocks/page.scss";
+@import "./blocks/container.scss";
 @import "./blocks/header.scss";
-@import "./blocks/menu.scss";
+@import "./blocks/navigation.scss";
 @import "./blocks/tour.scss";
-@import "./blocks/card.scss";
-@import "./blocks/reviews.scss";
-@import "./blocks/photo.scss";
-@import "./blocks/form-tour.scss";
-@import "./blocks/form.scss";
-
+@import "./blocks/tour-card.scss";

@@ -1,119 +1,105 @@
 // Header
 
 .header {
-  position: relative;
-  color: $basic-white;
-
-  &--inner {
-    min-height: 488px;
-    width: 100%;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 39.9%),
-      linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url("../../img/bg-header.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-
-    @media (min-resolution: 2dppx) {
-      background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 39.9%),
-        linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-        url("../../img/bg-header@2x.jpg");
-
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-
-
-    @include tablet {
-      height: 831px;
-    }
-  }
+  display: flex;
+  min-height: 831px;
 }
 
-// Title
+.header__inner {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url("../img/bg-header.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
-.header__title-wrapper {
+.header__content {
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  padding: 52px 25px;
-  margin: 0 auto;
-  max-width: 768px;
+  align-items: center;
+  justify-content: center;
+
+
+  h1 {
+    margin: 0;
+    margin-bottom: 40px;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 38px;
+    padding-left: 20px;
+    padding-right: 20px;
+    letter-spacing: 0.68px;
+    max-width: 769px;
+    width: 100%;
+    color: var(--_basic-white);
+    text-align: center;
+  }
+
+  p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--_basic-white);
+    margin-bottom: 40px;
+    text-align: center;
+    padding-right: 20px;
+    padding-left: 20px;
+    max-width: 602px;
+  }
+
+  a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    padding: 5px 20px;
+    background-color: var(--_basic-white);
+    border: 0;
+    border-radius: 10px;
+    transition: color, background-color, 0.3s ease;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.16px;
+
+    &:hover {
+      color: var(--_basic-white);
+      background-color: var(--_orange);
+    }
+  }
 
   @include tablet {
-    padding-top: 119px;
-    padding-bottom: 119px;
+    h1 {
+      font-size: 96px;
+      line-height: 104px;
+      letter-spacing: 1.92px;
+      margin-bottom: 50px;
+    }
+
+    p {
+      width: 100%;
+      font-size: 20px;
+      line-height: 28px;
+      padding-left: 80px;
+      padding-right: 80px;
+      margin-bottom: 50px;
+    }
+
+    a {
+      font-size: 17px;
+      line-height: 24px;
+      letter-spacing: -0.17px;
+    }
   }
 
   @include desktop {
-    padding-top: 119px;
-    padding-bottom: 119px;
-  }
-}
-
-.header__title {
-  margin: 0;
-  margin-bottom: 40px;
-  font-weight: 700;
-  font-size: 34px;
-  line-height: 38px;
-  text-align: center;
-  color: inherit;
-  letter-spacing: 0.02em;
-
-  @include tablet {
-    font-size: 96px;
-    line-height: 105px;
-    margin-bottom: 50px;
-  }
-}
-
-// Description
-
-.header__description {
-  margin: 0;
-  margin-bottom: 40px;
-
-  @include tablet {
-    margin-bottom: 50px;
-  }
-}
-
-// Link
-
-.header__link {
-  display: inline-block;
-  text-decoration: none;
-  color: $basic-black;
-  background-color: $basic-white;
-  border: 1px solid $basic-gray;
-  border-radius: 10px;
-  padding: 5px 20px;
-  margin: 0 auto;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 23px;
-  letter-spacing: -0.01em;
-
-  @include tablet {
-    font-size: 17px;
-    line-height: 24px;
-  }
-
-  @media (any-hover: hover) {
-    &:hover {
-      background-color: $basic-orange;
-      color: $basic-white;
+    h1 {
+      margin-top: 90px;
     }
-  }
 
-  &:focus-visible {
-    outline: 2px solid rgb(221, 160, 221);
-    outline-offset: 2px;
-  }
-
-  &:active {
-    background-color: $basic-semi-orange;
-    color: $basic-black;
+    p {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
   }
 }

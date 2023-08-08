@@ -1,29 +1,39 @@
 // Tour
+
 .tour {
-  padding-top: 75px;
+  h2 {
+    margin-bottom: 30px;
+  }
+
+  @include tablet {
+    h2 {
+      margin-bottom: 35px;
+    }
+  }
+}
+
+// Content
+
+.tour__contet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 
 // List
 
 .tour__list {
   @include overlay;
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
   gap: 10px;
-  font-size: 16px;
-  margin: auto;
-  margin-bottom: 50px;
-  width: 318px;
 
   @include tablet {
-    font-size: 23px;
-    margin-bottom: 100px;
-    grid-template-columns: repeat(5, min-content);
     gap: 30px;
-    grid-template-rows: min-content;
-    width: 100%;
   }
 }
 
@@ -31,11 +41,14 @@
 // Item
 
 .tour__item {
+  font-size: 16px;
+  font-style: normal;
   font-weight: 700;
-  line-height: 23px;
-  justify-self: center;
+  line-height: 22px;
 
   @include tablet {
+    font-size: 23px;
+    font-weight: 700;
     line-height: 28px;
   }
 }
@@ -43,28 +56,52 @@
 // Link
 
 .tour__link {
+  position: relative;
   text-decoration: none;
-  color: inherit;
+  color: var(--_basic-black);
+  padding-bottom: 6px;
   cursor: pointer;
 
-  &--current {
-    color: $basic-orange;
-    border-bottom: 2px solid $basic-orange;
+  &::after {
+    content: "";
+    height: 2px;
+    width: 0;
+    position: absolute;
+    background-color: var(--_orange);
+    bottom: 0;
+    left: 50%;
+    transition: width, 0.7s ease;
+    transform: translateX(-50%);
   }
 
-  @media (any-hover: hover) {
-    &:hover {
-      border-bottom: 2px solid $basic-black;
+  &--active {
+    color: var(--_orange);
+
+    &::after {
+      content: "";
+      height: 2px;
+      width: 100%;
+      position: absolute;
+      background-color: var(--_orange);
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 
-  &:focus-visible {
-    outline: 2px solid rgb(221, 160, 221);
-    outline-offset: 2px;
-  }
+  &:hover {
+    color: var(--_orange);
 
-  &:active {
-    color: rgb(0, 0, 0, 0.3);
-    border-color: rgb(0, 0, 0, 0.3);
+    &::after {
+      content: "";
+      height: 2px;
+      width: 100%;
+      position: absolute;
+      background-color: var(--_orange);
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 }
+
