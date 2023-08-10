@@ -1,11 +1,12 @@
-// const navBar = document.querySelector('nav');
+const navBar = document.querySelector('.navigation');
+console.log(navBar)
 
+function scroll () {
+  if (window.scrollY > 450) {
+    navBar.classList.add('navigation--scroll')
+  } else {
+    navBar.classList.remove('navigation--scroll')
+  }
+}
 
-// window.onscroll = function () {
-//   if(window.scrollY > 450) {
-//     navBar.classList.add('menu--scroll')
-//   } else {
-//     navBar.classList.remove('menu--scroll')
-//   }
-
-// }
+window.addEventListener('scroll', scroll)

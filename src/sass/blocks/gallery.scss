@@ -1,0 +1,167 @@
+// Gallery
+
+.gallery__inner {
+  margin: 0 auto;
+  padding: 0 21px;
+  max-width: 1920px;
+
+  @include tablet {
+    padding: 0 20px;
+  }
+
+  @include desktop {
+    padding: 0 30px;
+  }
+}
+
+// List
+
+.gallery__list {
+  @include overlay;
+
+  display: grid;
+  margin-bottom: 18px;
+  grid-template-rows: 110px;
+
+  @include tablet {
+    grid-template-rows: 301px;
+    margin-bottom: 31px;
+  }
+}
+
+.gallery__list__first__container {
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 18px;
+
+  li {
+    &:nth-of-type(2) {
+      display: none;
+    }
+
+    &:nth-of-type(3) {
+      display: none;
+    }
+  }
+
+  @include tablet {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+
+    li {
+      // stylelint-disable-next-line
+      &:nth-of-type(3) {
+        display: block;
+      }
+    }
+  }
+
+  @include desktop {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+
+    li {
+      // stylelint-disable-next-line
+      &:nth-of-type(2) {
+        display: block;
+      }
+    }
+  }
+}
+
+.gallery__list__second__container {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+
+  li {
+    &:nth-of-type(2) {
+      display: none;
+    }
+
+    &:nth-of-type(3) {
+      display: none;
+    }
+  }
+
+  @include tablet {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+
+    li {
+      // stylelint-disable-next-line
+      &:nth-of-type(2) {
+        display: block;
+      }
+    }
+  }
+
+  @include desktop {
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 30px;
+
+    li {
+      // stylelint-disable-next-line
+      &:nth-of-type(3) {
+        display: block;
+      }
+    }
+  }
+}
+
+.gallery__list__last__container {
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 18px;
+
+  li {
+    &:nth-of-type(3) {
+      display: none;
+    }
+
+    &:nth-of-type(4) {
+      display: none;
+    }
+  }
+
+  @include tablet {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+
+    li {
+      // stylelint-disable-next-line
+      &:nth-of-type(3) {
+        display: block;
+      }
+    }
+  }
+
+  @include desktop {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+
+    li {
+      // stylelint-disable-next-line
+      &:nth-of-type(4) {
+        display: block;
+      }
+    }
+  }
+}
+
+.gallery__item {
+  display: block;
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+  }
+
+  @include tablet {
+    img {
+      border-radius: 50px;
+    }
+  }
+}
+
+.gallery__item--hidden {
+  display: none;
+}

@@ -47,6 +47,7 @@
     align-items: center;
     justify-content: flex-start;
     text-decoration: none;
+    background-color: transparent;
     color: var(--_basic-white);
     font-size: 16px;
     font-weight: 700;
@@ -75,22 +76,29 @@
   }
 }
 
-.tour-card__item:hover {
-  img {
-    transform: scale(1.2);
+@media (any-hover: hover) {
+  .tour-card__item:hover {
+    img {
+      transform: scale(1.2);
+    }
+
+    a {
+      border-radius: 50px;
+      background-color: var(--_green);
+    }
   }
+}
 
+.tour-card__item:active {
   a {
-
-    border-radius: 50px;
-    background: var(--_green);
+    background-color: var(--_orange);
   }
 }
 
 .tour-card__inner {
   display: flex;
   flex-direction: column;
-  z-index: 100;
+  z-index: 10;
   position: relative;
 
   h3 {

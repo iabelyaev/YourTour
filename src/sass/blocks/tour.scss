@@ -70,8 +70,9 @@
     background-color: var(--_orange);
     bottom: 0;
     left: 50%;
-    transition: width, 0.7s ease;
     transform: translateX(-50%);
+    opacity: 0;
+    transition: width, opacity, 0.5s ease;
   }
 
   &--active {
@@ -86,6 +87,7 @@
       bottom: 0;
       left: 50%;
       transform: translateX(-50%);
+      opacity: 1;
     }
   }
 
@@ -93,14 +95,8 @@
     color: var(--_orange);
 
     &::after {
-      content: "";
-      height: 2px;
       width: 100%;
-      position: absolute;
-      background-color: var(--_orange);
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
+      opacity: 1;
     }
   }
 }
