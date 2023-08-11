@@ -72,7 +72,7 @@
     left: 50%;
     transform: translateX(-50%);
     opacity: 0;
-    transition: width, opacity, 0.5s ease;
+    transition: width 0.5s, opacity 0.5s;
   }
 
   &--active {
@@ -91,12 +91,14 @@
     }
   }
 
-  &:hover {
-    color: var(--_orange);
+  @media (any-hover: hover) {
+    &:hover {
+      color: var(--_orange);
 
-    &::after {
-      width: 100%;
-      opacity: 1;
+      &::after {
+        width: 100%;
+        opacity: 1;
+      }
     }
   }
 }

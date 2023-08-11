@@ -61,15 +61,17 @@
     background-color: var(--_basic-white);
     border: 0;
     border-radius: 10px;
-    transition: color, background-color, 0.3s ease;
+    transition: color 0.5s, background-color 0.5s;
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
     letter-spacing: -0.16px;
 
-    &:hover {
-      color: var(--_basic-white);
-      background-color: var(--_orange);
+    @media (any-hover: hover) {
+      &:hover {
+        color: var(--_basic-white);
+        background-color: var(--_orange);
+      }
     }
   }
 

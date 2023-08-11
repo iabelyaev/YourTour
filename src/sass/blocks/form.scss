@@ -117,8 +117,10 @@
   background-color: var(--_semi-beige);
   cursor: pointer;
 
-  &:hover {
-    background-color: var(--_beige);
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: var(--_beige);
+    }
   }
 }
 
@@ -296,8 +298,10 @@
     font-family: inherit;
     color: var(--_basic-black);
 
-    &:hover {
-      text-decoration-line: underline;
+    @media (any-hover: hover) {
+      &:hover {
+        text-decoration-line: underline;
+      }
     }
 
     &:active {

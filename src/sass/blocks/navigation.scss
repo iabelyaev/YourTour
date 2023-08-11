@@ -90,7 +90,7 @@
     left: 50%;
     transform: translateX(-50%);
     opacity: 0;
-    transition: width, opacity, 0.5s ease;
+    transition: width 0.5s, opacity 0.5s;
   }
 
   &:hover {
