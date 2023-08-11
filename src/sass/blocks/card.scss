@@ -1,0 +1,144 @@
+// Card
+
+.card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+
+  @include tablet {
+    border-radius: 50px;
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      .card__image {
+        transform: scale(1.2);
+      }
+
+      .card__button {
+        background-color: var(--_green);
+      }
+    }
+  }
+
+  &:active {
+    .card__button {
+      background-color: var(--_orange);
+    }
+  }
+}
+
+// Article
+
+.card__article {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+// Header
+
+.card__header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: var(--_basic-white);
+  z-index: 3;
+}
+
+
+.card__header b {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.16px;
+  color: inherit;
+
+  @include tablet {
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: -0.17px;
+  }
+}
+
+// Title
+
+.card__title {
+  margin: 0;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0.92px;
+  color: inherit;
+
+  @include tablet {
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 42px;
+  }
+}
+
+// Image
+
+.card__image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: scale(1);
+  transition: transform 0.3s ease;
+}
+
+// Overlay
+
+.card__overlay {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%);
+  z-index: 1;
+}
+
+// Footer
+
+.card__footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+// Button
+
+.card__button {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  padding: 7px 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  text-decoration: none;
+  background-color: transparent;
+  border-radius: 50px;
+  color: var(--_basic-white);
+  transform: translateX(-20px);
+  transition: background-color 0.3s ease;
+  z-index: 9;
+
+  @include tablet {
+    font-size: 23px;
+    line-height: 28px;
+  }
+}

@@ -66,8 +66,12 @@
   }
 }
 
-.reviews__text:nth-of-type(1) {
-  margin-bottom: 30px;
+.reviews__text--margin {
+  margin-bottom: 41px;
+}
+
+.reviews__footer {
+  margin-top: 40px;
 }
 
 .reviews__footer-wrapper {

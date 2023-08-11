@@ -71,7 +71,7 @@
   <main>
     <section class="tour">
       <div class="conteiner">
-        <div class="tour__contet">
+        <div class="tour__content">
           <h2>
             Выбери свой тур
           </h2>
@@ -103,123 +103,135 @@
             </li>
           </ul>
         </div>
-        <div class="tour__cards tour-card">
-          <ul class="tour-card__list">
-            <li class="tour-card__item">
-                <img src="./img/card-tour-photo-1.jpg" loading="lazy" decoding="async" width="318" height="318" alt="">
-              <div class="tour-card__inner">
-              <h3>
-                Путешествие в&nbsp;горы
-              </h3>
-              <b>
-                от 80 000 руб
-              </b>
-              </div>
-              <a href="">
-                Подробнее
-                <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M22.7004 12.2833L16.1535 5.79682C15.7541 5.40106 15.1063 5.40106 14.7068 5.79682C14.3073 6.19266 14.3073 6.83433 14.7068 7.23017L19.5074 11.9865H2.02294C1.45803 11.9865 1 12.4403 1 13C1 13.5596 1.45803 14.0135 2.02294 14.0135H19.5074L14.707 18.7698C14.3075 19.1656 14.3075 19.8073 14.707 20.2032C14.9067 20.4009 15.1686 20.5 15.4304 20.5C15.6921 20.5 15.9539 20.4009 16.1537 20.2032L22.7004 13.7167C23.0999 13.3208 23.0999 12.6792 22.7004 12.2833Z" fill="white"/>
-                </svg>
-              </a>
-              <div class="tour-card__overlay"></div>
+        <ul class="tour__card__list">
+            <li class="tour__card card">
+              <article class="card__article">
+                <header class="tour__card-header card__header">
+                  <h3 class="card__title">Путешествие в&nbsp;горы</h3>
+                  <b>от 80 000 руб</b>
+                </header>
+                <footer class="card__footer">
+                  <a class="card__button" href="#">
+                    Подробнее
+                    <svg aria-hidden="true" width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M22.7004 12.2833L16.1535 5.79682C15.7541 5.40106 15.1063 5.40106 14.7068 5.79682C14.3073 6.19266 14.3073 6.83433 14.7068 7.23017L19.5074 11.9865H2.02294C1.45803 11.9865 1 12.4403 1 13C1 13.5596 1.45803 14.0135 2.02294 14.0135H19.5074L14.707 18.7698C14.3075 19.1656 14.3075 19.8073 14.707 20.2032C14.9067 20.4009 15.1686 20.5 15.4304 20.5C15.6921 20.5 15.9539 20.4009 16.1537 20.2032L22.7004 13.7167C23.0999 13.3208 23.0999 12.6792 22.7004 12.2833Z" fill="white"/>
+                    </svg>
+                  </a>
+                </footer>
+              </article>
+              <picture>
+                <source srcset="./img/card-tour-photo-1.webp 1x, ./img/card-tour-photo-1@2x.webp 2x" type="image/webp">
+                <img class="card__image" src="./img/card-tour-photo-1.jpg" srcset="./img/card-tour-photo-1@2x.jpg 2x" loading="lazy" decoding="async" width="318" height="318" alt="">
+              </picture>
+              <div class="card__overlay"></div>
             </li>
-            <li class="tour-card__item">
-              <img src="./img/card-tour-photo-2.jpg" loading="lazy" decoding="async" alt="">
-              <div class="tour-card__inner">
-                <h3>
-                  Путешествие в&nbsp;горы
-                </h3>
-                <b>
-                  от 80 000 руб
-                </b>
-              </div>
-              <a href="">
-                Подробнее
-                <svg aria-hidden="true" width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M22.7004 12.2833L16.1535 5.79682C15.7541 5.40106 15.1063 5.40106 14.7068 5.79682C14.3073 6.19266 14.3073 6.83433 14.7068 7.23017L19.5074 11.9865H2.02294C1.45803 11.9865 1 12.4403 1 13C1 13.5596 1.45803 14.0135 2.02294 14.0135H19.5074L14.707 18.7698C14.3075 19.1656 14.3075 19.8073 14.707 20.2032C14.9067 20.4009 15.1686 20.5 15.4304 20.5C15.6921 20.5 15.9539 20.4009 16.1537 20.2032L22.7004 13.7167C23.0999 13.3208 23.0999 12.6792 22.7004 12.2833Z" fill="white"/>
-                </svg>
-              </a>
-              <div class="tour-card__overlay"></div>
+            <li class="tour__card card">
+              <article class="card__article">
+                <header class="tour__card-header card__header">
+                  <h3 class="card__title">Путешествие в&nbsp;горы</h3>
+                  <b>от 80 000 руб</b>
+                </header>
+                <footer class="card__footer">
+                  <a class="card__button" href="#">
+                    Подробнее
+                    <svg aria-hidden="true" width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M22.7004 12.2833L16.1535 5.79682C15.7541 5.40106 15.1063 5.40106 14.7068 5.79682C14.3073 6.19266 14.3073 6.83433 14.7068 7.23017L19.5074 11.9865H2.02294C1.45803 11.9865 1 12.4403 1 13C1 13.5596 1.45803 14.0135 2.02294 14.0135H19.5074L14.707 18.7698C14.3075 19.1656 14.3075 19.8073 14.707 20.2032C14.9067 20.4009 15.1686 20.5 15.4304 20.5C15.6921 20.5 15.9539 20.4009 16.1537 20.2032L22.7004 13.7167C23.0999 13.3208 23.0999 12.6792 22.7004 12.2833Z" fill="white"/>
+                    </svg>
+                  </a>
+                </footer>
+              </article>
+              <picture>
+                <source srcset="./img/card-tour-photo-2.webp 1x, ./img/card-tour-photo-2@2x.webp 2x" type="image/webp">
+                <img class="card__image" src="./img/card-tour-photo-2.jpg" srcset="./img/card-tour-photo-2@2x.jpg 2x" loading="lazy" decoding="async" width="318" height="318" alt="">
+              </picture>
+              <div class="card__overlay"></div>
             </li>
-            <li class="tour-card__item">
-              <img src="./img/card-tour-photo-3.jpg" loading="lazy" decoding="async" alt="">
-              <div class="tour-card__inner">
-                <h3>
-                  Путешествие в&nbsp;горы
-                </h3>
-                <b>
-                  от 80 000 руб
-                </b>
-
-              </div>
-              <a href="">
-                Подробнее
-                <svg aria-hidden="true" width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M22.7004 12.2833L16.1535 5.79682C15.7541 5.40106 15.1063 5.40106 14.7068 5.79682C14.3073 6.19266 14.3073 6.83433 14.7068 7.23017L19.5074 11.9865H2.02294C1.45803 11.9865 1 12.4403 1 13C1 13.5596 1.45803 14.0135 2.02294 14.0135H19.5074L14.707 18.7698C14.3075 19.1656 14.3075 19.8073 14.707 20.2032C14.9067 20.4009 15.1686 20.5 15.4304 20.5C15.6921 20.5 15.9539 20.4009 16.1537 20.2032L22.7004 13.7167C23.0999 13.3208 23.0999 12.6792 22.7004 12.2833Z" fill="white"/>
-                </svg>
-              </a>
-              <div class="tour-card__overlay"></div>
+            <li class="tour__card card">
+              <article class="card__article">
+                <header class="tour__card-header card__header">
+                  <h3 class="card__title">Путешествие в&nbsp;горы</h3>
+                  <b>от 80 000 руб</b>
+                </header>
+                <footer class="card__footer">
+                  <a class="card__button" href="#">
+                    Подробнее
+                    <svg aria-hidden="true" width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M22.7004 12.2833L16.1535 5.79682C15.7541 5.40106 15.1063 5.40106 14.7068 5.79682C14.3073 6.19266 14.3073 6.83433 14.7068 7.23017L19.5074 11.9865H2.02294C1.45803 11.9865 1 12.4403 1 13C1 13.5596 1.45803 14.0135 2.02294 14.0135H19.5074L14.707 18.7698C14.3075 19.1656 14.3075 19.8073 14.707 20.2032C14.9067 20.4009 15.1686 20.5 15.4304 20.5C15.6921 20.5 15.9539 20.4009 16.1537 20.2032L22.7004 13.7167C23.0999 13.3208 23.0999 12.6792 22.7004 12.2833Z" fill="white"/>
+                    </svg>
+                  </a>
+                </footer>
+              </article>
+              <picture>
+                <source srcset="./img/card-tour-photo-3.webp 1x, ./img/card-tour-photo-3@2x.webp 2x" type="image/webp">
+                <img class="card__image" src="./img/card-tour-photo-3.jpg" srcset="./img/card-tour-photo-3@2x.jpg 2x" loading="lazy" decoding="async" width="318" height="318" alt="">
+              </picture>
+              <div class="card__overlay"></div>
             </li>
-            <li class="tour-card__item">
-              <img src="./img/card-tour-photo-4.jpg" decoding="async" loading="lazy" alt="">
-              <div class="tour-card__inner">
-                <h3>
-                  Путешествие в&nbsp;горы
-                </h3>
-                <b>
-                  от 80 000 руб
-                </b>
-              </div>
-              <a href="">
-                Подробнее
-                <svg aria-hidden="true" width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M22.7004 12.2833L16.1535 5.79682C15.7541 5.40106 15.1063 5.40106 14.7068 5.79682C14.3073 6.19266 14.3073 6.83433 14.7068 7.23017L19.5074 11.9865H2.02294C1.45803 11.9865 1 12.4403 1 13C1 13.5596 1.45803 14.0135 2.02294 14.0135H19.5074L14.707 18.7698C14.3075 19.1656 14.3075 19.8073 14.707 20.2032C14.9067 20.4009 15.1686 20.5 15.4304 20.5C15.6921 20.5 15.9539 20.4009 16.1537 20.2032L22.7004 13.7167C23.0999 13.3208 23.0999 12.6792 22.7004 12.2833Z" fill="white"/>
-                </svg>
-              </a>
-              <div class="tour-card__overlay"></div>
+            <li class="tour__card card">
+              <article class="card__article">
+                <header class="tour__card-header card__header">
+                  <h3 class="card__title">Путешествие в&nbsp;горы</h3>
+                  <b>от 80 000 руб</b>
+                </header>
+                <footer class="card__footer">
+                  <a class="card__button" href="#">
+                    Подробнее
+                    <svg aria-hidden="true" width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M22.7004 12.2833L16.1535 5.79682C15.7541 5.40106 15.1063 5.40106 14.7068 5.79682C14.3073 6.19266 14.3073 6.83433 14.7068 7.23017L19.5074 11.9865H2.02294C1.45803 11.9865 1 12.4403 1 13C1 13.5596 1.45803 14.0135 2.02294 14.0135H19.5074L14.707 18.7698C14.3075 19.1656 14.3075 19.8073 14.707 20.2032C14.9067 20.4009 15.1686 20.5 15.4304 20.5C15.6921 20.5 15.9539 20.4009 16.1537 20.2032L22.7004 13.7167C23.0999 13.3208 23.0999 12.6792 22.7004 12.2833Z" fill="white"/>
+                    </svg>
+                  </a>
+                </footer>
+              </article>
+              <picture>
+                <source srcset="./img/card-tour-photo-4.webp 1x, ./img/card-tour-photo-4@2x.webp 2x" type="image/webp">
+                <img class="card__image" src="./img/card-tour-photo-4.jpg" srcset="./img/card-tour-photo-4@2x.jpg 2x" loading="lazy" decoding="async" width="318" height="318" alt="">
+              </picture>
+              <div class="card__overlay"></div>
             </li>
-            <li class="tour-card__item">
-              <img src="./img/card-tour-photo-5.jpg" loading="lazy" decoding="async" alt="">
-              <div class="tour-card__inner">
-                <h3>
-                  Путешествие в&nbsp;горы
-                </h3>
-                <b>
-                  от 80 000 руб
-                </b>
-
-              </div>
-              <a href="">
-                Подробнее
-                <svg aria-hidden="true" width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M22.7004 12.2833L16.1535 5.79682C15.7541 5.40106 15.1063 5.40106 14.7068 5.79682C14.3073 6.19266 14.3073 6.83433 14.7068 7.23017L19.5074 11.9865H2.02294C1.45803 11.9865 1 12.4403 1 13C1 13.5596 1.45803 14.0135 2.02294 14.0135H19.5074L14.707 18.7698C14.3075 19.1656 14.3075 19.8073 14.707 20.2032C14.9067 20.4009 15.1686 20.5 15.4304 20.5C15.6921 20.5 15.9539 20.4009 16.1537 20.2032L22.7004 13.7167C23.0999 13.3208 23.0999 12.6792 22.7004 12.2833Z" fill="white"/>
-                </svg>
-              </a>
-              <div class="tour-card__overlay"></div>
+            <li class="tour__card card">
+              <article class="card__article">
+                <header class="tour__card-header card__header">
+                  <h3 class="card__title">Путешествие в&nbsp;горы</h3>
+                  <b>от 80 000 руб</b>
+                </header>
+                <footer class="card__footer">
+                  <a class="card__button" href="#">
+                    Подробнее
+                    <svg aria-hidden="true" width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M22.7004 12.2833L16.1535 5.79682C15.7541 5.40106 15.1063 5.40106 14.7068 5.79682C14.3073 6.19266 14.3073 6.83433 14.7068 7.23017L19.5074 11.9865H2.02294C1.45803 11.9865 1 12.4403 1 13C1 13.5596 1.45803 14.0135 2.02294 14.0135H19.5074L14.707 18.7698C14.3075 19.1656 14.3075 19.8073 14.707 20.2032C14.9067 20.4009 15.1686 20.5 15.4304 20.5C15.6921 20.5 15.9539 20.4009 16.1537 20.2032L22.7004 13.7167C23.0999 13.3208 23.0999 12.6792 22.7004 12.2833Z" fill="white"/>
+                    </svg>
+                  </a>
+                </footer>
+              </article>
+              <picture>
+                <source srcset="./img/card-tour-photo-5.webp 1x, ./img/card-tour-photo-5@2x.webp 2x" type="image/webp">
+                <img class="card__image" src="./img/card-tour-photo-5.jpg" srcset="./img/card-tour-photo-5@2x.jpg 2x" loading="lazy" decoding="async" width="318" height="318" alt="">
+              </picture>
+              <div class="card__overlay"></div>
             </li>
-            <li class="tour-card__item">
-              <img src="./img/card-tour-photo-6.jpg" decoding="async" loading="lazy"  alt="">
-              <div class="tour-card__inner">
-                <h3>
-                  Путешествие в&nbsp;горы
-                </h3>
-                <b>
-                  от 80 000 руб
-                </b>
-
-              </div>
-              <a href="">
-                Подробнее
-                <svg aria-hidden="true" width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M22.7004 12.2833L16.1535 5.79682C15.7541 5.40106 15.1063 5.40106 14.7068 5.79682C14.3073 6.19266 14.3073 6.83433 14.7068 7.23017L19.5074 11.9865H2.02294C1.45803 11.9865 1 12.4403 1 13C1 13.5596 1.45803 14.0135 2.02294 14.0135H19.5074L14.707 18.7698C14.3075 19.1656 14.3075 19.8073 14.707 20.2032C14.9067 20.4009 15.1686 20.5 15.4304 20.5C15.6921 20.5 15.9539 20.4009 16.1537 20.2032L22.7004 13.7167C23.0999 13.3208 23.0999 12.6792 22.7004 12.2833Z" fill="white"/>
-                </svg>
-              </a>
-              <div class="tour-card__overlay"></div>
+            <li class="tour__card card">
+              <article class="card__article">
+                <header class="tour__card-header card__header">
+                  <h3 class="card__title">Путешествие в&nbsp;горы</h3>
+                  <b>от 80 000 руб</b>
+                </header>
+                <footer class="card__footer">
+                  <a class="card__button" href="#">
+                    Подробнее
+                    <svg aria-hidden="true" width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M22.7004 12.2833L16.1535 5.79682C15.7541 5.40106 15.1063 5.40106 14.7068 5.79682C14.3073 6.19266 14.3073 6.83433 14.7068 7.23017L19.5074 11.9865H2.02294C1.45803 11.9865 1 12.4403 1 13C1 13.5596 1.45803 14.0135 2.02294 14.0135H19.5074L14.707 18.7698C14.3075 19.1656 14.3075 19.8073 14.707 20.2032C14.9067 20.4009 15.1686 20.5 15.4304 20.5C15.6921 20.5 15.9539 20.4009 16.1537 20.2032L22.7004 13.7167C23.0999 13.3208 23.0999 12.6792 22.7004 12.2833Z" fill="white"/>
+                    </svg>
+                  </a>
+                </footer>
+              </article>
+              <picture>
+                <source srcset="./img/card-tour-photo-6.webp 1x, ./img/card-tour-photo-6@2x.webp 2x" type="image/webp">
+                <img class="card__image" src="./img/card-tour-photo-6.jpg" srcset="./img/card-tour-photo-6@2x.jpg 2x" loading="lazy" decoding="async" width="318" height="318" alt="">
+              </picture>
+              <div class="card__overlay"></div>
             </li>
-          </ul>
-        </div>
+        </ul>
       </div>
-
     </section>
     <section class="tour-form">
       <div class="conteiner">
@@ -326,7 +338,10 @@
                   </p>
                 </div>
                 <div class="reviews__avatar">
-                  <img src="./img/avatar-maria.jpg" width="75" height="75" decoding="async" loading="lazy" alt="">
+                  <picture>
+                    <source srcset="./img/avatar-maria.webp 1x, ./img/avatar-maria@2x.webp 2x" type="image/webp">
+                    <img src="./img/avatar-maria.jpg" srcset="./img/avatar-maria@2x.jpg 2x" width="75" height="75" decoding="async" loading="lazy" alt="Avatar Maria.">
+                  </picture>
                 </div>
                 </div>
               </footer>
@@ -335,7 +350,7 @@
           <li class="reviews__item">
             <article class="reviews__article">
               <div>
-                <p class="reviews__text">
+                <p class="reviews__text reviews__text--margin">
                   Равным образом постоянный количественный рост и сфера нашей активности играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям.
                 </p>
                 <p class="reviews__text">
@@ -353,7 +368,10 @@
                   </p>
                 </div>
                 <div class="reviews__avatar">
-                  <img src="./img/avatar-pavel.png" width="75" height="75" decoding="async" loading="lazy" alt="">
+                  <picture>
+                    <source srcset="./img/avatar-pavel.webp 1x, ./img/avatar-pavel@2x.webp 2x" type="image/webp">
+                    <img src="./img/avatar-pavel.jpg" srcset="./img/avatar-pavel@2x.jpg 2x" width="75" height="75" decoding="async" loading="lazy" alt="Avatar Pavel.">
+                  </picture>
                 </div>
                 </div>
               </footer>
@@ -370,47 +388,86 @@
         <div class="gallery__inner">
           <ul class="gallery__list gallery__list__first__container">
             <li class="gallery__item">
-              <img src="./img/travel photo-1.jpg" decoding="async" loading="lazy" alt="">
+              <picture>
+                <source srcset="./img/travel-photo-1.webp 1x, ./img/travel-photo-1@2x.webp 2x" type="image/webp">
+                <img src="./img/travel-photo-1.jpg" srcset="./img/travel-photo-1@2x.jpg 2x" decoding="async" loading="lazy">
+              </picture>
             </li>
             <li class="gallery__item">
-              <img src="./img/travel photo-2.jpg" decoding="async" loading="lazy" alt="">
+              <picture>
+                <source srcset="./img/travel-photo-2.webp 1x, ./img/travel-photo-2@2x.webp 2x" type="image/webp">
+                <img src="./img/travel-photo-2.jpg" srcset="./img/travel-photo-2@2x.jpg 2x" decoding="async" loading="lazy">
+              </picture>
             </li>
             <li class="gallery__item">
-              <img src="./img/travel photo-3.jpg" decoding="async" loading="lazy" alt="">
+              <picture>
+                <source srcset="./img/travel-photo-3.webp 1x, ./img/travel-photo-3@2x.webp 2x" type="image/webp">
+                <img src="./img/travel-photo-3.jpg" srcset="./img/travel-photo-3@2x.jpg 2x" decoding="async" loading="lazy">
+              </picture>
             </li>
             <li class="gallery__item">
-              <img src="./img/travel photo-4.jpg" decoding="async" loading="lazy" alt="">
+              <picture>
+                <source srcset="./img/travel-photo-4.webp 1x, ./img/travel-photo-4@2x.webp 2x" type="image/webp">
+                <img src="./img/travel-photo-4.jpg" srcset="./img/travel-photo-4@2x.jpg 2x" decoding="async" loading="lazy">
+              </picture>
             </li>
           </ul>
           <ul class="gallery__list gallery__list__second__container">
             <li class="gallery__item">
-              <img src="./img/travel photo-5.jpg" decoding="async" loading="lazy" alt="">
+              <picture>
+                <source srcset="./img/travel-photo-5.webp 1x, ./img/travel-photo-5@2x.webp 2x" type="image/webp">
+                <img src="./img/travel-photo-5.jpg" srcset="./img/travel-photo-5@2x.jpg 2x" decoding="async" loading="lazy">
+              </picture>
             </li>
             <li class="gallery__item">
-              <img src="./img/travel photo-6.jpg" decoding="async" loading="lazy" alt="">
+              <picture>
+                <source srcset="./img/travel-photo-6.webp 1x, ./img/travel-photo-6@2x.webp 2x" type="image/webp">
+                <img src="./img/travel-photo-6.jpg" srcset="./img/travel-photo-6@2x.jpg 2x" decoding="async" loading="lazy">
+              </picture>
             </li>
             <li class="gallery__item">
-              <img src="./img/travel photo-7.jpg" decoding="async" loading="lazy" alt="">
+              <picture>
+                <source srcset="./img/travel-photo-7.webp 1x, ./img/travel-photo-7@2x.webp 2x" type="image/webp">
+                <img src="./img/travel-photo-7.jpg" srcset="./img/travel-photo-7@2x.jpg 2x" decoding="async" loading="lazy">
+              </picture>
             </li>
             <li class="gallery__item">
-              <img src="./img/travel photo-8.jpg" decoding="async" loading="lazy" alt="">
+              <picture>
+                <source srcset="./img/travel-photo-8.webp 1x, ./img/travel-photo-8@2x.webp 2x" type="image/webp">
+                <img src="./img/travel-photo-8.jpg" srcset="./img/travel-photo-8@2x.jpg 2x" decoding="async" loading="lazy">
+              </picture>
             </li>
             <li class="gallery__item">
-              <img src="./img/travel photo-13.jpg" decoding="async" loading="lazy" alt="">
+              <picture>
+                <source srcset="./img/travel-photo-13.webp 1x, ./img/travel-photo-13@2x.webp 2x" type="image/webp">
+                <img src="./img/travel-photo-13.jpg" srcset="./img/travel-photo-13@2x.jpg 2x" decoding="async" loading="lazy">
+              </picture>
             </li>
           </ul>
           <ul class="gallery__list gallery__list__last__container">
             <li class="gallery__item">
-              <img src="./img/travel photo-9.jpg" decoding="async" loading="lazy" alt="">
+              <picture>
+                <source srcset="./img/travel-photo-9.webp 1x, ./img/travel-photo-9@2x.webp 2x" type="image/webp">
+                <img src="./img/travel-photo-9.jpg" srcset="./img/travel-photo-9@2x.jpg 2x" decoding="async" loading="lazy">
+              </picture>
             </li>
             <li class="gallery__item">
-              <img src="./img/travel photo-10.jpg" decoding="async" loading="lazy" alt="">
+              <picture>
+                <source srcset="./img/travel-photo-10.webp 1x, ./img/travel-photo-10@2x.webp 2x" type="image/webp">
+                <img src="./img/travel-photo-10.jpg" srcset="./img/travel-photo-10@2x.jpg 2x" decoding="async" loading="lazy">
+              </picture>
             </li>
             <li class="gallery__item">
-              <img src="./img/travel photo-11.jpg" decoding="async" loading="lazy" alt="">
+              <picture>
+                <source srcset="./img/travel-photo-11.webp 1x, ./img/travel-photo-11@2x.webp 2x" type="image/webp">
+                <img src="./img/travel-photo-11.jpg" srcset="./img/travel-photo-11@2x.jpg 2x" decoding="async" loading="lazy">
+              </picture>
             </li>
             <li class="gallery__item">
-              <img src="./img/travel photo-12.jpg" decoding="async" loading="lazy" alt="">
+              <picture>
+                <source srcset="./img/travel-photo-12.webp 1x, ./img/travel-photo-12@2x.webp 2x" type="image/webp">
+                <img src="./img/travel-photo-12.jpg" srcset="./img/travel-photo-12@2x.jpg 2x" decoding="async" loading="lazy">
+              </picture>
             </li>
           </ul>
         </div>
@@ -422,10 +479,10 @@
           <p>Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
         </div>
         <ul class="stories__list">
-          <li class="stories__item">
-            <article>
-              <header class="stories__card-header">
-                <h3>Автостопом в Стамбул</h3>
+          <li class="stories__card card">
+            <article class="card__article">
+              <header class="stories__card-header card__header">
+                <h3 class="card__title">Автостопом в Стамбул</h3>
                 <p>Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений:</p>
                 <ul class="stories__card-list">
                   <li>вкусная еда</li>
@@ -433,10 +490,10 @@
                   <li>красивый город.</li>
                 </ul>
               </header>
-              <footer class="stories__card-footer">
-                <a class="stories__card-footer__link" href="">
+              <footer class="stories__card-footer card__footer">
+                <a class="card__button" href="#">
                   Подробнее
-                  <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg aria-hidden="true" width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M22.7004 12.2833L16.1535 5.79682C15.7541 5.40106 15.1063 5.40106 14.7068 5.79682C14.3073 6.19266 14.3073 6.83433 14.7068 7.23017L19.5074 11.9865H2.02294C1.45803 11.9865 1 12.4403 1 13C1 13.5596 1.45803 14.0135 2.02294 14.0135H19.5074L14.707 18.7698C14.3075 19.1656 14.3075 19.8073 14.707 20.2032C14.9067 20.4009 15.1686 20.5 15.4304 20.5C15.6921 20.5 15.9539 20.4009 16.1537 20.2032L22.7004 13.7167C23.0999 13.3208 23.0999 12.6792 22.7004 12.2833Z" fill="white"/>
                   </svg>
                 </a>
@@ -458,20 +515,23 @@
                   </li>
                 </ul>
               </footer>
-              <img src="./img/story-image-1.jpg" width="318" height="455" loading="lazy" decoding="async" alt="">
-              <div class="stories__card__overlay"></div>
             </article>
+            <picture>
+              <source srcset="./img/story-image-1.webp 1x, ./img/story-image-1@2x.webp 2x" type="image/webp">
+              <img class="card__image" src="./img/story-image-1.jpg" srcset="./img/story-image-1@2x.jpg 2x" width="318" height="455" loading="lazy" decoding="async" alt="">
+            </picture>
+            <div class="card__overlay"></div>
           </li>
-          <li class="stories__item">
-            <article>
-              <header class="stories__card-header">
-                <h3>Автостопом в Стамбул</h3>
+          <li class="stories__card card">
+            <article class="card__article">
+              <header class="stories__card-header card__header">
+                <h3 class="card__title">Автостопом в Стамбул</h3>
                 <p>Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений.</p>
               </header>
-              <footer class="stories__card-footer">
-                <a class="stories__card-footer__link" href="">
+              <footer class="stories__card-footer card__footer">
+                <a class="card__button" href="#">
                   Подробнее
-                  <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg aria-hidden="true" width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M22.7004 12.2833L16.1535 5.79682C15.7541 5.40106 15.1063 5.40106 14.7068 5.79682C14.3073 6.19266 14.3073 6.83433 14.7068 7.23017L19.5074 11.9865H2.02294C1.45803 11.9865 1 12.4403 1 13C1 13.5596 1.45803 14.0135 2.02294 14.0135H19.5074L14.707 18.7698C14.3075 19.1656 14.3075 19.8073 14.707 20.2032C14.9067 20.4009 15.1686 20.5 15.4304 20.5C15.6921 20.5 15.9539 20.4009 16.1537 20.2032L22.7004 13.7167C23.0999 13.3208 23.0999 12.6792 22.7004 12.2833Z" fill="white"/>
                   </svg>
                 </a>
@@ -488,44 +548,50 @@
                   </li>
                 </ul>
               </footer>
-              <img src="./img/story-image-2.jpg" width="318" height="455" loading="lazy" decoding="async" alt="">
-              <div class="stories__card__overlay"></div>
             </article>
+            <picture>
+              <source srcset="./img/story-image-2.webp 1x, ./img/story-image-2@2x.webp 2x" type="image/webp">
+              <img class="card__image" src="./img/story-image-2.jpg" srcset="./img/story-image-2@2x.jpg 2x" width="318" height="455" loading="lazy" decoding="async" alt="">
+            </picture>
+            <div class="card__overlay"></div>
           </li>
-          <li class="stories__item">
-            <article>
-              <header class="stories__card-header">
-                <h3>Автостопом в Стамбул</h3>
+          <li class="stories__card card">
+            <article class="card__article">
+              <header class="stories__card-header card__header">
+                <h3 class="card__title">Автостопом в Стамбул</h3>
                 <p>Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений.</p>
               </header>
-              <footer class="stories__card-footer">
-                <a class="stories__card-footer__link" href="">
+              <footer class="stories__card-footer card__footer">
+                <a class="card__button" href="#">
                   Подробнее
-                  <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg aria-hidden="true" width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M22.7004 12.2833L16.1535 5.79682C15.7541 5.40106 15.1063 5.40106 14.7068 5.79682C14.3073 6.19266 14.3073 6.83433 14.7068 7.23017L19.5074 11.9865H2.02294C1.45803 11.9865 1 12.4403 1 13C1 13.5596 1.45803 14.0135 2.02294 14.0135H19.5074L14.707 18.7698C14.3075 19.1656 14.3075 19.8073 14.707 20.2032C14.9067 20.4009 15.1686 20.5 15.4304 20.5C15.6921 20.5 15.9539 20.4009 16.1537 20.2032L22.7004 13.7167C23.0999 13.3208 23.0999 12.6792 22.7004 12.2833Z" fill="white"/>
                   </svg>
                 </a>
                 <ul>
                   <li>
-                    <a class="stories__card-footer__button" href="" title="instagram" target="_blank" rel="noopener noreferrer">
+                    <a class="stories__card-footer__button" href="#" title="instagram" target="_blank" rel="noopener noreferrer">
                       instagram
                     </a>
                   </li>
                   <li>
-                    <a class="stories__card-footer__button" href="" title="facebook" target="_blank" rel="noopener noreferrer">
+                    <a class="stories__card-footer__button" href="#" title="facebook" target="_blank" rel="noopener noreferrer">
                       facebook
                     </a>
                   </li>
                   <li>
-                    <a class="stories__card-footer__button" href="" title="ВКонтакте" target="_blank" rel="noopener noreferrer">
+                    <a class="stories__card-footer__button" href="#" title="ВКонтакте" target="_blank" rel="noopener noreferrer">
                       ВКонтакте
                     </a>
                   </li>
                 </ul>
               </footer>
-              <img src="./img/story-image-3.jpg" width="318" height="455" loading="lazy" decoding="async" alt="">
-              <div class="stories__card__overlay"></div>
             </article>
+            <picture>
+              <source srcset="./img/story-image-3.webp 1x, ./img/story-image-3@2x.webp 2x" type="image/webp">
+              <img class="card__image" src="./img/story-image-3.jpg" srcset="./img/story-image-3@2x.jpg 2x" width="318" height="455" loading="lazy" decoding="async" alt="">
+            </picture>
+            <div class="card__overlay"></div>
           </li>
         </ul>
       </div>
@@ -534,11 +600,14 @@
       <div class="conteiner">
         <div class="connection__inner">
         <div class="connection__logo">
-          <img src="./img/footer-photo.jpg" width="130" height="133" alt="">
+          <picture>
+            <source srcset="./img/footer-photo.webp 1x, ./img/footer-photo@2x.webp 2x" type="image/webp">
+            <img src="./img/footer-photo.jpg" srcset="./img/footer-photo@2x.jpg 2x" width="130" height="133">
+          </picture>
         </div>
         <div class="connection__text">
           <h2>Пора в путешествие вместе с нами!</h2>
-          <p>Напиши на почту и узнай подробности на <a href="">yourtour@gmail.com</a></p>
+          <p>Напиши на почту и узнай подробности на <a href="mailto:yourtour@gmail.com" title="yourtour@gmail.com">yourtour@gmail.com</a></p>
         </div>
       </div>
       </div>
