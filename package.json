@@ -42,7 +42,6 @@
         "*.js",
         "src/*.html",
         "src/js/**/*.js",
-        "src/img/**/*.svg",
         "src/sass/**/*.scss"
     ],
     "engines": {
