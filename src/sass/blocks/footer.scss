@@ -16,7 +16,7 @@
   align-items: center;
   row-gap: 7px;
   padding: 21px;
-  max-width: 1168px;
+  max-width: 1170px;
   margin: 0 auto;
 
   p {
@@ -29,7 +29,7 @@
 
 
   @include tablet {
-    padding: 30px;
+    padding: 30px 1px;
     flex-direction: row;
     justify-content: space-between;
 
@@ -75,9 +75,16 @@
   }
 
   @include tablet {
+    gap: 25px;
     a {
       font-size: 20px;
       line-height: 28px;
+      gap: 17px;
+
+      svg {
+        width: 26px;
+        height: 26px;
+      }
     }
   }
 }

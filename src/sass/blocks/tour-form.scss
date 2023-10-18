@@ -1,0 +1,34 @@
+.tour-form {
+  padding-top: 75px;
+
+  @include tablet {
+    padding-top: 135px;
+  }
+}
+
+.tour-form__title-wrapper {
+  margin: 0 auto;
+  max-width: 750px;
+  margin-bottom: 40px;
+  width: 100%;
+
+  @include tablet {
+    margin-bottom: 102px;
+  }
+
+
+  p {
+    @include tablet {
+      padding-left: 177px;
+      padding-right: 176px;
+    }
+  }
+}
+
+.tour-form__title {
+  margin-bottom: 22px;
+
+  @include tablet {
+    margin-bottom: 30px;
+  }
+}

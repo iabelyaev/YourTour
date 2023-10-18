@@ -75,7 +75,7 @@
   color: inherit;
 
   @include tablet {
-    font-size: 35px;
+    font-size: 33px;
     font-weight: 500;
     line-height: 42px;
   }
@@ -116,6 +116,10 @@
   width: 100%;
   display: flex;
   align-items: center;
+
+  @include tablet {
+    align-items: end;
+  }
 }
 
 // Button
@@ -133,7 +137,7 @@
   background-color: transparent;
   border-radius: 50px;
   color: var(--_basic-white);
-  transform: translateX(-20px);
+  transform: translate(-20px, 6px);
   transition: background-color 0.3s ease;
   z-index: 9;
 

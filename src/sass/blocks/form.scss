@@ -3,6 +3,10 @@
 .form {
   border-radius: 30px;
   background-color: var(--_basic-white);
+
+  @include tablet {
+    border-radius: 50px;
+  }
 }
 
 .form__content {
@@ -13,6 +17,10 @@
   @include tablet {
     padding: 60px;
   }
+
+  @include desktop {
+    padding: 70px;
+  }
 }
 
 
@@ -22,12 +30,18 @@
   @include overlay;
   display: grid;
   gap: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
 
   @include tablet {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 20px;
     row-gap: 33px;
+    margin-bottom: 34px;
+  }
+
+  @include desktop {
+    column-gap: 30px;
+    margin-bottom: 33px;
   }
 }
 
@@ -41,7 +55,7 @@
     margin-bottom: 8px;
     font-size: 16px;
     font-weight: 400;
-    line-height: 22px;
+    line-height: 23px;
     color: var(--_basic-black);
   }
 
@@ -50,7 +64,7 @@
     font-family: inherit;
     font-size: 16px;
     font-weight: 400;
-    line-height: 22px;
+    line-height: 21px;
   }
 
   input::placeholder {
@@ -77,6 +91,7 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
+    min-height: 46px;
 
     option {
       color: var(--_basic-black);
@@ -95,7 +110,7 @@
   @include tablet {
     label {
       font-size: 20px;
-      line-height: 28px;
+      line-height: 26px;
     }
 
     input {
@@ -107,6 +122,10 @@
       font-size: 20px;
       line-height: 28px;
     }
+
+    textarea {
+      min-height: 152px;
+    }
   }
 }
 
@@ -116,11 +135,21 @@
   border-radius: 10px;
   background-color: var(--_semi-beige);
   cursor: pointer;
+  outline: 0;
 
   @media (any-hover: hover) {
     &:hover {
       background-color: var(--_beige);
     }
+  }
+
+  &:focus-visible {
+    border: 1px solid var(--Gray-300, #A6A6A6);
+    background-color: var(--_beige);
+  }
+
+  @include tablet {
+    padding: 20px;
   }
 }
 
@@ -135,11 +164,18 @@
     display: block;
     width: 13px;
     height: 13px;
-    right: 20px;
+    right: 17px;
     top: 13px;
     transform: rotate(45deg);
     border: solid var(--_basic-black);
     border-width: 0 2px 2px 0;
+  }
+
+  @include tablet {
+    &::after {
+      right: 27px;
+      top: 25px;
+    }
   }
 }
 
@@ -153,13 +189,14 @@
   margin-bottom: 30px;
 
   @include tablet {
-    margin-bottom: 33px;
+    margin-bottom: 31px;
   }
 }
 
 .form__legend {
+  padding: 0;
   font-family: inherit;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
@@ -167,7 +204,7 @@
 
   @include tablet {
     font-size: 20px;
-    line-height: 28px;
+    line-height: 25px;
   }
 }
 
@@ -181,7 +218,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  padding-left: 25px;
+  padding-left: 30px;
 
   span {
     font-size: 16px;
@@ -191,12 +228,16 @@
   }
 
   @include tablet {
-    padding-left: 35px;
+    padding-left: 37px;
 
     span {
       font-size: 20px;
       line-height: 28px;
     }
+  }
+
+  @include desktop {
+    padding-left: 37px;
   }
 }
 
@@ -275,14 +316,22 @@
     display: flex;
     align-items: start;
     position: relative;
-    padding-left: 25px;
+    padding-left: 30px;
   }
 
   @include tablet {
-    margin-bottom: 33px;
+    margin-bottom: 31px;
 
     label {
-      padding-left: 35px;
+      padding-left: 37px;
+    }
+  }
+
+  @include desktop {
+    margin-bottom: 35px;
+
+    label {
+      padding-left: 45px;
     }
   }
 }
@@ -290,7 +339,7 @@
 .form__checkbox-text {
   font-size: 16px;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 23px;
   color: var(--_gray);
 
   a {
@@ -310,8 +359,15 @@
   }
 
   @include tablet {
-    font-size: 20px;
+    font-size: 17px;
     line-height: 28px;
+    letter-spacing: -0.17px;
+  }
+
+  @include desktop {
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: -0.17px;
   }
 }
 
@@ -322,11 +378,17 @@
   width: 100%;
 
   @include tablet {
+    column-gap: 30px;
     max-width: 500px;
+  }
+
+  @include desktop {
+    column-gap: 30px;
   }
 }
 
 .form__submit {
+  padding-top: 15px;
   color: var(--_basic-white);
   background-color: var(--_green);
   transition: background-color, 0.4s ease;
@@ -340,9 +402,14 @@
   &:active {
     background-color: var(--_special-green);
   }
+
+  @include tablet {
+    padding: 15px;
+  }
 }
 
 .form__reset {
+  padding-top: 15px;
   color: var(--_green);
   background-color: var(--_semi-green);
   transition: background-color, 0.4s ease;

@@ -26,37 +26,8 @@ body {
   color: var(--_basic-black);
 }
 
-section {
-  padding-top: 75px;
-
-  h2 {
-    margin: 0;
-    margin-bottom: 20px;
-    font-size: 34px;
-    font-weight: 700;
-    line-height: 38px;
-    letter-spacing: 0.68px;
-    color: inherit;
-    text-align: center;
-  }
-
-  @include tablet {
-    padding-top: 135px;
-
-    h2 {
-      font-size: 59px;
-      font-weight: 700;
-      line-height: 73px;
-    }
-  }
-}
-
-
 .title-content {
-  margin: 0 auto;
-  max-width: 750px;
-  margin-bottom: 40px;
-  width: 100%;
+
 
   p {
     margin: 0;

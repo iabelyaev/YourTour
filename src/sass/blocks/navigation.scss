@@ -4,6 +4,7 @@
   position: absolute;
   width: 100%;
   padding: 20px;
+  padding-top: 33px;
   min-height: 31px;
   color: var(--_basic-white);
 
@@ -16,7 +17,7 @@
   }
 
   @include tablet {
-    padding: 29px;
+    padding: 29px 57px;
 
     a {
       font-size: 20px;

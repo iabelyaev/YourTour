@@ -6,6 +6,7 @@
 @import "./globals/reboot.scss";
 
 // Blocks
+@import "./blocks/title.scss";
 @import "./blocks/button.scss";
 @import "./blocks/container.scss";
 @import "./blocks/header.scss";
@@ -18,3 +19,5 @@
 @import "./blocks/connection.scss";
 @import "./blocks/footer.scss";
 @import "./blocks/card.scss";
+@import "./blocks/tour-form.scss";
+
