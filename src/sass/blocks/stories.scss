@@ -107,7 +107,7 @@
 
     @include tablet {
       padding-left: 30px;
-
+      /* stylelint-disable-next-line */
       &::before {
         left: 11px;
       }

@@ -76,11 +76,12 @@
 
   @include tablet {
     gap: 25px;
+
     a {
       font-size: 20px;
       line-height: 28px;
       gap: 17px;
-
+      /* stylelint-disable-next-line */
       svg {
         width: 26px;
         height: 26px;

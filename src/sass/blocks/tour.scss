@@ -103,11 +103,11 @@
     }
 
     @include tablet {
+      /* stylelint-disable-next-line */
       &::after {
         bottom: -5px;
       }
     }
-
   }
 
   @media (any-hover: hover) {
