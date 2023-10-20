@@ -104,6 +104,7 @@
 
   textarea {
     min-height: 132px;
+    min-width: 278px;
     width: 100%;
   }
 
@@ -125,6 +126,14 @@
 
     textarea {
       min-height: 152px;
+      min-width: 798px;
+    }
+  }
+
+  @include desktop  {
+    textarea {
+      min-width: 1030px;
+      max-width: 1030px;
     }
   }
 }
