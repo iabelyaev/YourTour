@@ -103,8 +103,8 @@
   }
 
   textarea {
-    resize: none;
     min-height: 132px;
+    width: 100%;
   }
 
   @include tablet {
