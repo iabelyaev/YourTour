@@ -15,9 +15,6 @@
   width: 100%;
 
   p {
-    padding-left: 20px;
-    padding-right: 20px;
-
     @include tablet {
       padding-left: 150px;
       padding-right: 150px;
