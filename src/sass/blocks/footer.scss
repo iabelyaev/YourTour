@@ -29,7 +29,7 @@
 
 
   @include tablet {
-    padding: 30px 1px;
+    padding: 30px 53px;
     flex-direction: row;
     justify-content: space-between;
 
@@ -75,12 +75,12 @@
   }
 
   @include tablet {
-    gap: 25px;
+    gap: 23px;
 
     a {
       font-size: 20px;
       line-height: 28px;
-      gap: 17px;
+      gap: 12px;
       /* stylelint-disable-next-line */
       svg {
         width: 26px;
