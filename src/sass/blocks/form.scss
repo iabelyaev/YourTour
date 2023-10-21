@@ -105,7 +105,7 @@
   textarea {
     min-height: 132px;
     min-width: 278px;
-    width: 100%;
+    max-width: 100%;
   }
 
   @include tablet {
@@ -133,7 +133,6 @@
   @include desktop  {
     textarea {
       min-width: 1030px;
-      max-width: 1030px;
     }
   }
 }
