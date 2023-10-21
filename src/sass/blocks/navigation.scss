@@ -39,12 +39,9 @@
     .navigation__phone,
     .navigation__link {
       //  stylelint-disable-next-line
-      &:hover {
-        //  stylelint-disable-next-line
         &::after {
           background-color: var(--_basic-black);
         }
-      }
     }
   }
 }
