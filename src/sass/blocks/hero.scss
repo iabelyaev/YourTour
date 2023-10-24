@@ -1,0 +1,114 @@
+.hero {
+  position: relative;
+  display: flex;
+  min-height: 488px;
+
+  @include tablet {
+    min-height: 831px;
+  }
+}
+
+.hero__inner {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%),
+  linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),
+  url("../img/bg-header.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero__content {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+
+  h1 {
+    margin: 0;
+    margin-top: 85px;
+    margin-bottom: 42px;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 38px;
+    padding-left: 20px;
+    padding-right: 20px;
+    letter-spacing: 0.68px;
+    max-width: 769px;
+    width: 360px;
+    color: var(--_basic-white);
+    text-align: center;
+  }
+
+  p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    color: var(--_basic-white);
+    margin-bottom: 40px;
+    text-align: center;
+    padding-right: 30px;
+    padding-left: 30px;
+    max-width: 602px;
+  }
+
+  a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    padding: 5px 20px;
+    background-color: var(--_basic-white);
+    border: 0;
+    border-radius: 10px;
+    transition: color 0.5s, background-color 0.5s;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.16px;
+
+    @media (any-hover: hover) {
+      &:hover {
+        color: var(--_basic-white);
+        background-color: var(--_orange);
+      }
+    }
+  }
+
+  @include tablet {
+    h1 {
+      font-size: 96px;
+      line-height: 104px;
+      letter-spacing: 1.92px;
+      margin-bottom: 55px;
+      width: 100%;
+    }
+
+    p {
+      width: 100%;
+      font-size: 20px;
+      line-height: 28px;
+      padding-left: 80px;
+      padding-right: 80px;
+      margin-bottom: 50px;
+    }
+
+    a {
+      font-size: 17px;
+      line-height: 24px;
+      letter-spacing: -0.17px;
+    }
+  }
+
+  @include desktop {
+    h1 {
+      margin-top: 90px;
+    }
+
+    p {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+  }
+}
