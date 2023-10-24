@@ -1,67 +1,9 @@
-// Navigation
-
-.navigation {
-  position: absolute;
-  width: 100%;
-  padding: 20px;
-  padding-top: 33px;
-  min-height: 31px;
-  color: var(--_basic-white);
-
-  a {
-    color: inherit;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 22px;
-  }
-
-  @include tablet {
-    padding: 29px 57px;
-
-    a {
-      font-size: 20px;
-      line-height: 28px;
-    }
-  }
-
-  &--scroll {
-    position: fixed;
-    background: rgba(243, 239, 232, 0.6);
-    backdrop-filter: blur(27px);
-    z-index: 99;
-    color: var(--_basic-black);
-
-    .navigation__phone {
-      font-size: 20px;
-    }
-
-    .navigation__phone,
-    .navigation__link {
-      //  stylelint-disable-next-line
-        &::after {
-          background-color: var(--_basic-black);
-        }
-    }
-  }
-}
-
-.navigation__inner {
-  max-width: 1170px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
-}
-
-
 // List
 .navigation__list {
   @include overlay;
   display: none;
 
-  @include tablet {
+  @media (min-width: 920px) {
     display: flex;
     gap: 30px;
   }
@@ -99,25 +41,3 @@
   }
 }
 
-.navigation__logo {
-  display: flex;
-  height: 22px;
-  width: 133px;
-
-  a {
-    svg {
-      width: 100%;
-      height: 100%;
-    }
-  }
-
-  @include tablet {
-    height: 30px;
-    width: 181px;
-
-    svg {
-      width: 100%;
-      height: 100%;
-    }
-  }
-}
