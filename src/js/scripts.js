@@ -1,11 +1,11 @@
-const navBar = document.querySelector('.navigation');
+const navBar = document.querySelector('.header');
 
 
 const scroll = () => {
   if (window.scrollY > 450) {
-    navBar.classList.add('navigation--scroll')
+    navBar.classList.add('header--scroll')
   } else {
-    navBar.classList.remove('navigation--scroll')
+    navBar.classList.remove('header--scroll')
   }
 }
 
