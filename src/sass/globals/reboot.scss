@@ -21,7 +21,8 @@ body {
   font-family: "Roboto", "Aria", sans-serif;
   font-size: 13px;
   line-height: 1em;
-  min-height: 360px;
+  min-height: 100%;
+  min-width: 360px;
   background-color: var(--_semi-beige);
   color: var(--_basic-black);
 }
