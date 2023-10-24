@@ -103,8 +103,8 @@
   }
 
   textarea {
+    resize: vertical;
     min-height: 132px;
-    min-width: 278px;
     max-width: 100%;
   }
 
@@ -126,7 +126,6 @@
 
     textarea {
       min-height: 152px;
-      min-width: 798px;
     }
   }
 
