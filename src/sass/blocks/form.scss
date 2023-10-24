@@ -30,7 +30,7 @@
   @include overlay;
   display: grid;
   gap: 30px;
-  margin-bottom: 31px;
+  margin-bottom: 27px;
 
   @include tablet {
     grid-template-columns: repeat(2, 1fr);
@@ -395,7 +395,7 @@
 }
 
 .form__submit {
-  padding-top: 15px;
+  padding: 13px;
   color: var(--_basic-white);
   background-color: var(--_green);
   transition: background-color, 0.4s ease;
@@ -416,7 +416,7 @@
 }
 
 .form__reset {
-  padding-top: 15px;
+  padding-top: 13px;
   color: var(--_green);
   background-color: var(--_semi-green);
   transition: background-color, 0.4s ease;
